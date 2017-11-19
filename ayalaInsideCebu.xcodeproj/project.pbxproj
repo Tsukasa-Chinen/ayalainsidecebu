@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
+		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
+		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
+		C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63420361FBE8FF600D650FB /* Assets.xcassets */; };
+		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
+		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
+		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
+		C695EFDA1FBE94BF00BC265C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = C695EFD91FBE94BF00BC265C /* demo.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C63420411FBE8FF600D650FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63420241FBE8FF600D650FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C634202B1FBE8FF600D650FB;
+			remoteInfo = ayalaInsideCebu;
+		};
+		C634204C1FBE8FF600D650FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C63420241FBE8FF600D650FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C634202B1FBE8FF600D650FB;
+			remoteInfo = ayalaInsideCebu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayalaInsideCebu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C63420341FBE8FF600D650FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C63420361FBE8FF600D650FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C63420391FBE8FF600D650FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C634203B1FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63420401FBE8FF600D650FB /* ayalaInsideCebuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuTests.swift; sourceTree = "<group>"; };
+		C63420461FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
+		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C695EFD91FBE94BF00BC265C /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = demo.html; path = html/demo.html; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C63420291FBE8FF600D650FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C634203D1FBE8FF600D650FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63420481FBE8FF600D650FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C63420231FBE8FF600D650FB = {
+			isa = PBXGroup;
+			children = (
+				C634202E1FBE8FF600D650FB /* ayalaInsideCebu */,
+				C63420431FBE8FF600D650FB /* ayalaInsideCebuTests */,
+				C634204E1FBE8FF600D650FB /* ayalaInsideCebuUITests */,
+				C634202D1FBE8FF600D650FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C634202D1FBE8FF600D650FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */,
+				C63420401FBE8FF600D650FB /* ayalaInsideCebuTests.xctest */,
+				C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C634202E1FBE8FF600D650FB /* ayalaInsideCebu */ = {
+			isa = PBXGroup;
+			children = (
+				C695EFD81FBE94AA00BC265C /* html */,
+				C634205D1FBE900E00D650FB /* assets */,
+				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
+				C63420311FBE8FF600D650FB /* ViewController.swift */,
+				C63420331FBE8FF600D650FB /* Main.storyboard */,
+				C63420361FBE8FF600D650FB /* Assets.xcassets */,
+				C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */,
+				C634203B1FBE8FF600D650FB /* Info.plist */,
+			);
+			path = ayalaInsideCebu;
+			sourceTree = "<group>";
+		};
+		C63420431FBE8FF600D650FB /* ayalaInsideCebuTests */ = {
+			isa = PBXGroup;
+			children = (
+				C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */,
+				C63420461FBE8FF600D650FB /* Info.plist */,
+			);
+			path = ayalaInsideCebuTests;
+			sourceTree = "<group>";
+		};
+		C634204E1FBE8FF600D650FB /* ayalaInsideCebuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */,
+				C63420511FBE8FF600D650FB /* Info.plist */,
+			);
+			path = ayalaInsideCebuUITests;
+			sourceTree = "<group>";
+		};
+		C634205D1FBE900E00D650FB /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		C695EFD81FBE94AA00BC265C /* html */ = {
+			isa = PBXGroup;
+			children = (
+				C695EFD91FBE94BF00BC265C /* demo.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C634202B1FBE8FF600D650FB /* ayalaInsideCebu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63420541FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebu" */;
+			buildPhases = (
+				C63420281FBE8FF600D650FB /* Sources */,
+				C63420291FBE8FF600D650FB /* Frameworks */,
+				C634202A1FBE8FF600D650FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ayalaInsideCebu;
+			productName = ayalaInsideCebu;
+			productReference = C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C634203F1FBE8FF600D650FB /* ayalaInsideCebuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63420571FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebuTests" */;
+			buildPhases = (
+				C634203C1FBE8FF600D650FB /* Sources */,
+				C634203D1FBE8FF600D650FB /* Frameworks */,
+				C634203E1FBE8FF600D650FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63420421FBE8FF600D650FB /* PBXTargetDependency */,
+			);
+			name = ayalaInsideCebuTests;
+			productName = ayalaInsideCebuTests;
+			productReference = C63420401FBE8FF600D650FB /* ayalaInsideCebuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C634204A1FBE8FF600D650FB /* ayalaInsideCebuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C634205A1FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebuUITests" */;
+			buildPhases = (
+				C63420471FBE8FF600D650FB /* Sources */,
+				C63420481FBE8FF600D650FB /* Frameworks */,
+				C63420491FBE8FF600D650FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C634204D1FBE8FF600D650FB /* PBXTargetDependency */,
+			);
+			name = ayalaInsideCebuUITests;
+			productName = ayalaInsideCebuUITests;
+			productReference = C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63420241FBE8FF600D650FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tsukasa Chinen";
+				TargetAttributes = {
+					C634202B1FBE8FF600D650FB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					C634203F1FBE8FF600D650FB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C634202B1FBE8FF600D650FB;
+					};
+					C634204A1FBE8FF600D650FB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C634202B1FBE8FF600D650FB;
+					};
+				};
+			};
+			buildConfigurationList = C63420271FBE8FF600D650FB /* Build configuration list for PBXProject "ayalaInsideCebu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C63420231FBE8FF600D650FB;
+			productRefGroup = C634202D1FBE8FF600D650FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C634202B1FBE8FF600D650FB /* ayalaInsideCebu */,
+				C634203F1FBE8FF600D650FB /* ayalaInsideCebuTests */,
+				C634204A1FBE8FF600D650FB /* ayalaInsideCebuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C634202A1FBE8FF600D650FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
+				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
+				C695EFDA1FBE94BF00BC265C /* demo.html in Resources */,
+				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C634203E1FBE8FF600D650FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63420491FBE8FF600D650FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C63420281FBE8FF600D650FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63420321FBE8FF600D650FB /* ViewController.swift in Sources */,
+				C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C634203C1FBE8FF600D650FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63420471FBE8FF600D650FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C63420421FBE8FF600D650FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C634202B1FBE8FF600D650FB /* ayalaInsideCebu */;
+			targetProxy = C63420411FBE8FF600D650FB /* PBXContainerItemProxy */;
+		};
+		C634204D1FBE8FF600D650FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C634202B1FBE8FF600D650FB /* ayalaInsideCebu */;
+			targetProxy = C634204C1FBE8FF600D650FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C63420331FBE8FF600D650FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63420341FBE8FF600D650FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C63420391FBE8FF600D650FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C63420521FBE8FF600D650FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C63420531FBE8FF600D650FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C63420551FBE8FF600D650FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C63420561FBE8FF600D650FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C63420581FBE8FF600D650FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ayalaInsideCebu.app/ayalaInsideCebu";
+			};
+			name = Debug;
+		};
+		C63420591FBE8FF600D650FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ayalaInsideCebu.app/ayalaInsideCebu";
+			};
+			name = Release;
+		};
+		C634205B1FBE8FF600D650FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ayalaInsideCebu;
+			};
+			name = Debug;
+		};
+		C634205C1FBE8FF600D650FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ayalaInsideCebuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ayalaInsideCebu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C63420271FBE8FF600D650FB /* Build configuration list for PBXProject "ayalaInsideCebu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63420521FBE8FF600D650FB /* Debug */,
+				C63420531FBE8FF600D650FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63420541FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63420551FBE8FF600D650FB /* Debug */,
+				C63420561FBE8FF600D650FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63420571FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63420581FBE8FF600D650FB /* Debug */,
+				C63420591FBE8FF600D650FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C634205A1FBE8FF600D650FB /* Build configuration list for PBXNativeTarget "ayalaInsideCebuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C634205B1FBE8FF600D650FB /* Debug */,
+				C634205C1FBE8FF600D650FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C63420241FBE8FF600D650FB /* Project object */;
+}
