@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60900171FC2796100ACB415 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C60900161FC2796100ACB415 /* style.css */; };
+		C609001A1FC27BAA00ACB415 /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C60900191FC27BAA00ACB415 /* bg_body_top.png */; };
+		C609001C1FC2877000ACB415 /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C609001B1FC2877000ACB415 /* burger.svg */; };
+		C609001E1FC2899400ACB415 /* cross.svg in Resources */ = {isa = PBXBuildFile; fileRef = C609001D1FC2899400ACB415 /* cross.svg */; };
 		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
 		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
 		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
@@ -14,7 +18,8 @@
 		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
-		C695EFDA1FBE94BF00BC265C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = C695EFD91FBE94BF00BC265C /* demo.html */; };
+		C6F0DD331FC1D28700FCAB85 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C6F0DD321FC1D28700FCAB85 /* index.html */; };
+		C6F0DD351FC1D29000FCAB85 /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C60900161FC2796100ACB415 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = html/css/style.css; sourceTree = SOURCE_ROOT; };
+		C60900191FC27BAA00ACB415 /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body_top.png; sourceTree = "<group>"; };
+		C609001B1FC2877000ACB415 /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = burger.svg; sourceTree = "<group>"; };
+		C609001D1FC2899400ACB415 /* cross.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cross.svg; sourceTree = "<group>"; };
 		C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayalaInsideCebu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +57,8 @@
 		C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
 		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C695EFD91FBE94BF00BC265C /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = demo.html; path = html/demo.html; sourceTree = SOURCE_ROOT; };
+		C6F0DD321FC1D28700FCAB85 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/index.html; sourceTree = SOURCE_ROOT; };
+		C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.4.min.js"; path = "html/js/jquery-2.1.4.min.js"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C60900181FC27BAA00ACB415 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				C609001D1FC2899400ACB415 /* cross.svg */,
+				C609001B1FC2877000ACB415 /* burger.svg */,
+				C60900191FC27BAA00ACB415 /* bg_body_top.png */,
+			);
+			name = img;
+			path = html/img;
+			sourceTree = SOURCE_ROOT;
+		};
 		C63420231FBE8FF600D650FB = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +120,7 @@
 		C634202E1FBE8FF600D650FB /* ayalaInsideCebu */ = {
 			isa = PBXGroup;
 			children = (
-				C695EFD81FBE94AA00BC265C /* html */,
-				C634205D1FBE900E00D650FB /* assets */,
+				C6F0DD311FC1CE7600FCAB85 /* assets */,
 				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
 				C63420311FBE8FF600D650FB /* ViewController.swift */,
 				C63420331FBE8FF600D650FB /* Main.storyboard */,
@@ -129,19 +149,15 @@
 			path = ayalaInsideCebuUITests;
 			sourceTree = "<group>";
 		};
-		C634205D1FBE900E00D650FB /* assets */ = {
+		C6F0DD311FC1CE7600FCAB85 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				C60900181FC27BAA00ACB415 /* img */,
+				C60900161FC2796100ACB415 /* style.css */,
+				C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */,
+				C6F0DD321FC1D28700FCAB85 /* index.html */,
 			);
 			path = assets;
-			sourceTree = "<group>";
-		};
-		C695EFD81FBE94AA00BC265C /* html */ = {
-			isa = PBXGroup;
-			children = (
-				C695EFD91FBE94BF00BC265C /* demo.html */,
-			);
-			path = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,10 +267,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C609001E1FC2899400ACB415 /* cross.svg in Resources */,
 				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
+				C60900171FC2796100ACB415 /* style.css in Resources */,
+				C6F0DD331FC1D28700FCAB85 /* index.html in Resources */,
+				C6F0DD351FC1D29000FCAB85 /* jquery-2.1.4.min.js in Resources */,
 				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
-				C695EFDA1FBE94BF00BC265C /* demo.html in Resources */,
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
+				C609001A1FC27BAA00ACB415 /* bg_body_top.png in Resources */,
+				C609001C1FC2877000ACB415 /* burger.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98EKE6YK73;
 				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebu;
@@ -461,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98EKE6YK73;
 				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsukasachinen.ayalaInsideCebu;

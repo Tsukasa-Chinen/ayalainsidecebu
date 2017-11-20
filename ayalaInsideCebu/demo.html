@@ -10,6 +10,7 @@
 	</style>
 </head>
 <body>
+<button id="hoge">ボタン</button>
 <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 960" style="enable-background:new 0 0 640 960;" xml:space="preserve">
 	<rect x="33" y="40" class="st0" width="184" height="184"/>
 	<rect x="423" y="261" class="st1" width="184" height="184"/>
@@ -19,6 +20,14 @@
 	<rect x="269" y="40" class="st2" width="338" height="184"/>
 	<rect x="33" y="261" class="st3" width="338" height="184"/>
 	<rect x="33" y="693" class="st0" width="574" height="184"/>
-</svg>	
+</svg>
+<script src="./js/jquery-2.1.4.min.js"></script>
+<script>
+	$(function(){
+		$('#hoge').on('click', function(){
+			alert('Hello Swift');
+		});
+	});
+</script>
 </body>
 </html>

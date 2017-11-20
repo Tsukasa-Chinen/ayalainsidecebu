@@ -7,32 +7,28 @@
 //
 
 import UIKit
-
-/* HTMLファイルを読み込み */
-let svgPath = Bundle.main.path(forResource: "demo", ofType: "html")
-
-/* WebViewを作成 */
-var webView: UIWebView!
+import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myWebView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        /* Load: Local HTML */
+        let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
+        let uri = URL(fileURLWithPath:htmlPath!)
+        let uriRequest = URLRequest(url: uri)
+        myWebView.load(uriRequest)
+        
+    } /* END override */
 
-        /* 読み込み時にWebViewwに表示 */
-        webView = UIWebView(frame: self.view.frame)
-        self.view.addSubview(webView)
-        let request = URL(fileURLWithPath: svgPath!)
-        let req = URLRequest(url: request)
-        webView.loadRequest(req)
     
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    } /* END didReceiveMemoryWarning */
 
 
 }
