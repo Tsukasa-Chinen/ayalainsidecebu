@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C60900171FC2796100ACB415 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C60900161FC2796100ACB415 /* style.css */; };
-		C609001A1FC27BAA00ACB415 /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C60900191FC27BAA00ACB415 /* bg_body_top.png */; };
-		C609001C1FC2877000ACB415 /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C609001B1FC2877000ACB415 /* burger.svg */; };
-		C609001E1FC2899400ACB415 /* cross.svg in Resources */ = {isa = PBXBuildFile; fileRef = C609001D1FC2899400ACB415 /* cross.svg */; };
 		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
 		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
 		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
@@ -18,8 +14,15 @@
 		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
-		C6F0DD331FC1D28700FCAB85 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C6F0DD321FC1D28700FCAB85 /* index.html */; };
-		C6F0DD351FC1D29000FCAB85 /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */; };
+		C650DF431FC29506002A5595 /* map.svg in Resources */ = {isa = PBXBuildFile; fileRef = C650DF421FC29506002A5595 /* map.svg */; };
+		C67F47E11FC290750017CCEA /* helo.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DE1FC290750017CCEA /* helo.html */; };
+		C67F47E21FC290750017CCEA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DF1FC290750017CCEA /* index.html */; };
+		C67F47E31FC290750017CCEA /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E01FC290750017CCEA /* map.html */; };
+		C67F47EC1FC2908D0017CCEA /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E51FC2908D0017CCEA /* style.css */; };
+		C67F47ED1FC2908D0017CCEA /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E71FC2908D0017CCEA /* bg_body_top.png */; };
+		C67F47EE1FC2908D0017CCEA /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E81FC2908D0017CCEA /* burger.svg */; };
+		C67F47EF1FC2908D0017CCEA /* cross.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E91FC2908D0017CCEA /* cross.svg */; };
+		C67F47F01FC2908D0017CCEA /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C60900161FC2796100ACB415 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = html/css/style.css; sourceTree = SOURCE_ROOT; };
-		C60900191FC27BAA00ACB415 /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body_top.png; sourceTree = "<group>"; };
-		C609001B1FC2877000ACB415 /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = burger.svg; sourceTree = "<group>"; };
-		C609001D1FC2899400ACB415 /* cross.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cross.svg; sourceTree = "<group>"; };
 		C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayalaInsideCebu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +56,15 @@
 		C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
 		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6F0DD321FC1D28700FCAB85 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/index.html; sourceTree = SOURCE_ROOT; };
-		C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.4.min.js"; path = "html/js/jquery-2.1.4.min.js"; sourceTree = SOURCE_ROOT; };
+		C650DF421FC29506002A5595 /* map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map.svg; sourceTree = "<group>"; };
+		C67F47DE1FC290750017CCEA /* helo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helo.html; path = html/src/helo.html; sourceTree = SOURCE_ROOT; };
+		C67F47DF1FC290750017CCEA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/src/index.html; sourceTree = SOURCE_ROOT; };
+		C67F47E01FC290750017CCEA /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = map.html; path = html/src/map.html; sourceTree = SOURCE_ROOT; };
+		C67F47E51FC2908D0017CCEA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		C67F47E71FC2908D0017CCEA /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body_top.png; sourceTree = "<group>"; };
+		C67F47E81FC2908D0017CCEA /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = burger.svg; sourceTree = "<group>"; };
+		C67F47E91FC2908D0017CCEA /* cross.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cross.svg; sourceTree = "<group>"; };
+		C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.4.min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +92,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C60900181FC27BAA00ACB415 /* img */ = {
-			isa = PBXGroup;
-			children = (
-				C609001D1FC2899400ACB415 /* cross.svg */,
-				C609001B1FC2877000ACB415 /* burger.svg */,
-				C60900191FC27BAA00ACB415 /* bg_body_top.png */,
-			);
-			name = img;
-			path = html/img;
-			sourceTree = SOURCE_ROOT;
-		};
 		C63420231FBE8FF600D650FB = {
 			isa = PBXGroup;
 			children = (
@@ -149,13 +144,53 @@
 			path = ayalaInsideCebuUITests;
 			sourceTree = "<group>";
 		};
+		C67F47DD1FC290600017CCEA /* html */ = {
+			isa = PBXGroup;
+			children = (
+				C67F47DE1FC290750017CCEA /* helo.html */,
+				C67F47DF1FC290750017CCEA /* index.html */,
+				C67F47E01FC290750017CCEA /* map.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		C67F47E41FC2908D0017CCEA /* css */ = {
+			isa = PBXGroup;
+			children = (
+				C67F47E51FC2908D0017CCEA /* style.css */,
+			);
+			name = css;
+			path = html/src/css;
+			sourceTree = SOURCE_ROOT;
+		};
+		C67F47E61FC2908D0017CCEA /* img */ = {
+			isa = PBXGroup;
+			children = (
+				C650DF421FC29506002A5595 /* map.svg */,
+				C67F47E71FC2908D0017CCEA /* bg_body_top.png */,
+				C67F47E81FC2908D0017CCEA /* burger.svg */,
+				C67F47E91FC2908D0017CCEA /* cross.svg */,
+			);
+			name = img;
+			path = html/src/img;
+			sourceTree = SOURCE_ROOT;
+		};
+		C67F47EA1FC2908D0017CCEA /* js */ = {
+			isa = PBXGroup;
+			children = (
+				C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */,
+			);
+			name = js;
+			path = html/src/js;
+			sourceTree = SOURCE_ROOT;
+		};
 		C6F0DD311FC1CE7600FCAB85 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				C60900181FC27BAA00ACB415 /* img */,
-				C60900161FC2796100ACB415 /* style.css */,
-				C6F0DD341FC1D29000FCAB85 /* jquery-2.1.4.min.js */,
-				C6F0DD321FC1D28700FCAB85 /* index.html */,
+				C67F47E41FC2908D0017CCEA /* css */,
+				C67F47E61FC2908D0017CCEA /* img */,
+				C67F47EA1FC2908D0017CCEA /* js */,
+				C67F47DD1FC290600017CCEA /* html */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -267,15 +302,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C609001E1FC2899400ACB415 /* cross.svg in Resources */,
+				C67F47F01FC2908D0017CCEA /* jquery-2.1.4.min.js in Resources */,
+				C67F47E21FC290750017CCEA /* index.html in Resources */,
+				C67F47E11FC290750017CCEA /* helo.html in Resources */,
+				C67F47ED1FC2908D0017CCEA /* bg_body_top.png in Resources */,
+				C67F47EC1FC2908D0017CCEA /* style.css in Resources */,
+				C67F47EE1FC2908D0017CCEA /* burger.svg in Resources */,
 				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
-				C60900171FC2796100ACB415 /* style.css in Resources */,
-				C6F0DD331FC1D28700FCAB85 /* index.html in Resources */,
-				C6F0DD351FC1D29000FCAB85 /* jquery-2.1.4.min.js in Resources */,
 				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
-				C609001A1FC27BAA00ACB415 /* bg_body_top.png in Resources */,
-				C609001C1FC2877000ACB415 /* burger.svg in Resources */,
+				C67F47E31FC290750017CCEA /* map.html in Resources */,
+				C67F47EF1FC2908D0017CCEA /* cross.svg in Resources */,
+				C650DF431FC29506002A5595 /* map.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
