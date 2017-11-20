@@ -14,7 +14,6 @@
 		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
-		C650DF431FC29506002A5595 /* map.svg in Resources */ = {isa = PBXBuildFile; fileRef = C650DF421FC29506002A5595 /* map.svg */; };
 		C67F47E11FC290750017CCEA /* helo.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DE1FC290750017CCEA /* helo.html */; };
 		C67F47E21FC290750017CCEA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DF1FC290750017CCEA /* index.html */; };
 		C67F47E31FC290750017CCEA /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E01FC290750017CCEA /* map.html */; };
@@ -56,7 +55,6 @@
 		C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
 		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C650DF421FC29506002A5595 /* map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map.svg; sourceTree = "<group>"; };
 		C67F47DE1FC290750017CCEA /* helo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helo.html; path = html/src/helo.html; sourceTree = SOURCE_ROOT; };
 		C67F47DF1FC290750017CCEA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/src/index.html; sourceTree = SOURCE_ROOT; };
 		C67F47E01FC290750017CCEA /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = map.html; path = html/src/map.html; sourceTree = SOURCE_ROOT; };
@@ -166,7 +164,6 @@
 		C67F47E61FC2908D0017CCEA /* img */ = {
 			isa = PBXGroup;
 			children = (
-				C650DF421FC29506002A5595 /* map.svg */,
 				C67F47E71FC2908D0017CCEA /* bg_body_top.png */,
 				C67F47E81FC2908D0017CCEA /* burger.svg */,
 				C67F47E91FC2908D0017CCEA /* cross.svg */,
@@ -313,7 +310,6 @@
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
 				C67F47E31FC290750017CCEA /* map.html in Resources */,
 				C67F47EF1FC2908D0017CCEA /* cross.svg in Resources */,
-				C650DF431FC29506002A5595 /* map.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

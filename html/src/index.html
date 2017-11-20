@@ -3,21 +3,12 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="top">
 	<div class="wrapper">
 		<div class="contents">
 			<nav class="nav">
-				<p id="js_menu_btn" class="nav__burger_btn"><span></span></p>
-				<ul id="js_menu_list" class="nav__list">
-					<li><a class="map" href="#"><img src="./map.svg"></a></li>
-					<li><a class="shop" href="#"><img src="./shop.svg"></a></li>
-					<li><a class="like" href="#"><img src="./like.svg"></a></li>
-					<li><a class="search" href="#"><img src="./img/search.svg"></a></li>
-				</ul>
-			</nav>
-			<!-- /.nav -->
 			<header>
 				<h1 class="top__title">Ayala Inside Cebu</h1>
 			</header>
@@ -31,24 +22,12 @@
 		<!-- /.contents -->
 	</div>
 	<!-- /.wrapper -->
-<script src="./jquery-2.1.4.min.js"></script>
+<script src="./js/jquery-2.1.4.min.js"></script>
 <script>
 $(function(){
 	$('.js_input_text input').on('focus', function(){
 		$(this).attr('placeholder', '');
-	});
-	$('#js_menu_btn').on('click', function(){
-		if(!$(this).hasClass('on')){
-			$(this).addClass('on');
-			$('#js_menu_list').slideDown();
-		}else{
-			$(this).removeClass('on');						
-			$('#js_menu_list').slideUp();
-		}
-		return false;
-	});
-	
-	
+	});	
 });
 </script>
 </body>

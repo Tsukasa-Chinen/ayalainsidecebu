@@ -18,7 +18,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	font-size: 100%;
+	font-size: 1rem;
 	color: #585858;
 	overflow-y: scroll;
 }
@@ -26,57 +26,107 @@ a {
 	color: inherit;
 	text-decoration: underline;
 }
+a,
+a:hover,
+a:visited,
+a:focus {
+	color: inherit;
+	outline: none;
+}
 
 /* Module
 -------------------------------------- */
-.nav__burger_btn {	
+.nav__button {
+	display: block;	
+	position: absolute;
+	top: 2.5%;
+	left: 2.5%;
+	z-index: 100;
+	width: 12vw;
+	height: 12vw;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../img/burger.svg);
+	border-radius: 0;
+	border: none;
+}
+.nav__button {
+	background-color: rgba(76, 185, 214, .85);	
+}
+.nav__button.on {
+	left: 1.25%;
+	background-color: rgba(76, 185, 214, 0);	
+	background-image: url(../img/cross.svg);
+	
+}
+
+/* Modal
+-------------------------------------- */
+.modal {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	transition: all .4s;
+	will-change: all;
+}
+.modal.on {
+	top: 0;
+}
+.modal__close_area {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(76, 185, 214, .85);
+	text-indent: -9999px;
 }
-.nav__burger_btn span,
-.nav__list a {
-	display: block;
-	width: 44px;
-	height: 44px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	border: none;
-	cursor: pointer;
-}
-.nav__burger_btn span {
-	background-color: rgba(76, 185, 284, .85);
-	background-image: url(burger.svg);	
-}
-.nav__burger_btn.on span {
-	background-image: url(cross.svg);	
-}
-.nav__list {
-	display: none;
+.modal__contents {
 	position: absolute;
-	top: 44px;
-	left: 0;
-	width: 44px;
+	top: 50%;
+	left: 50%;
+	z-index: 4;
+	width: 95%;
+	transform: translate(-50%, -50%);
 }
-.nav__list a.map {
-	background-color: rgba(211, 38, 38, .85);	
+.modal__menu li + li {
+	margin-top: 1rem;
 }
-.nav__list a.shop {
-	background-color: rgba(35, 175, 108, .85);	
+.modal__menu a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	letter-spacing: .2rem;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	padding: .4rem 0;
 }
-.nav__list a.like {
-	background-color: rgba(247, 147, 30, .85);	
+.modal__menu_image {
+	display: block;
+	width: 2.8rem;
+	fill: #fff;
 }
-.nav__list a.search {
-	background-color: rgba(237, 53, 141, .85);	
+.modal__menu_text {
+	display: block;
+	width: 80%;
+	font-size: 1.4rem;
+	color: #fff;
+	padding-left: .8rem;
 }
-
-
+.shop .modal__menu_text {
+	transform: translate(0, .1rem);
+}
+.search .modal__menu_text {
+	transform: translate(0, .1rem);
+}
 
 /* Top
 -------------------------------------- */
 #top {
-	background: url(bg_body_top.png) no-repeat center center;
+	background: url(../img/bg_body_top.png) no-repeat center center;
 	background-size: cover;
 }
 #top .wrapper {
@@ -91,14 +141,15 @@ a {
 	padding: 0 5%;
 }
 .top__title {
-	font-size: 220%;
+	font-size: 3.4vw;
 	color: #fff;
-	padding: 20% 0 4%;
+	padding: 20% 0 .6rem;
+	letter-spacing: .1rem;
 	border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
 .top__form {
 	position: absolute;
-	bottom: 10%;
+	bottom: 14%;
 	width: 90%;
 }
 .top__form_input_text {
@@ -107,7 +158,7 @@ a {
 .top__form_input_text input {
 	display: block;
 	width: 100%;
-	font-size: 160%;
+	font-size: 140%;
 	text-align: center;
 	border: 1px solid #fff;
 	background: transparent;
@@ -120,11 +171,18 @@ a {
 	        appearance: none;
 }
 .top__form_input_text + .top__form_input_text {
-	margin-top: 10%;
+	margin-top: 2rem;
 }
 :placeholder-shown {
     color: #fff;
 }
 ::-webkit-input-placeholder {
     color: #fff;
+}
+
+/* Map
+-------------------------------------- */
+#map {
+	background: url(../img/bg_body_top.png) no-repeat center center;
+	background-size: cover;
 }
