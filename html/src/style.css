@@ -214,8 +214,8 @@ a:focus {
 /* Map
 -------------------------------------- */
 #map {
-	background: url(bg_body_top.png) no-repeat center center;
-	background-size: cover;
+	background: url(map_lv_03.png) no-repeat center center;
+	background-size: 98% auto;
 }
 
 /* Shop
