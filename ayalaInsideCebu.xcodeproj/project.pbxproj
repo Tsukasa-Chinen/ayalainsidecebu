@@ -17,11 +17,11 @@
 		C67F47E11FC290750017CCEA /* helo.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DE1FC290750017CCEA /* helo.html */; };
 		C67F47E21FC290750017CCEA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47DF1FC290750017CCEA /* index.html */; };
 		C67F47E31FC290750017CCEA /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E01FC290750017CCEA /* map.html */; };
-		C67F47EC1FC2908D0017CCEA /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E51FC2908D0017CCEA /* style.css */; };
-		C67F47ED1FC2908D0017CCEA /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E71FC2908D0017CCEA /* bg_body_top.png */; };
-		C67F47EE1FC2908D0017CCEA /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E81FC2908D0017CCEA /* burger.svg */; };
-		C67F47EF1FC2908D0017CCEA /* cross.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67F47E91FC2908D0017CCEA /* cross.svg */; };
-		C67F47F01FC2908D0017CCEA /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */; };
+		C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE571FC3B34100664FCC /* burger.svg */; };
+		C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */; };
+		C6C2FE5E1FC3B34100664FCC /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE591FC3B34100664FCC /* style.css */; };
+		C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */; };
+		C6C2FE601FC3B34100664FCC /* cross.svg in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE5B1FC3B34100664FCC /* cross.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +58,11 @@
 		C67F47DE1FC290750017CCEA /* helo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helo.html; path = html/src/helo.html; sourceTree = SOURCE_ROOT; };
 		C67F47DF1FC290750017CCEA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/src/index.html; sourceTree = SOURCE_ROOT; };
 		C67F47E01FC290750017CCEA /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = map.html; path = html/src/map.html; sourceTree = SOURCE_ROOT; };
-		C67F47E51FC2908D0017CCEA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		C67F47E71FC2908D0017CCEA /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_body_top.png; sourceTree = "<group>"; };
-		C67F47E81FC2908D0017CCEA /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = burger.svg; sourceTree = "<group>"; };
-		C67F47E91FC2908D0017CCEA /* cross.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cross.svg; sourceTree = "<group>"; };
-		C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.4.min.js"; sourceTree = "<group>"; };
+		C6C2FE571FC3B34100664FCC /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = burger.svg; path = ayalaInsideCebu/assets/img/burger.svg; sourceTree = SOURCE_ROOT; };
+		C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.4.min.js"; path = "ayalaInsideCebu/assets/js/jquery-2.1.4.min.js"; sourceTree = SOURCE_ROOT; };
+		C6C2FE591FC3B34100664FCC /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ayalaInsideCebu/assets/css/style.css; sourceTree = SOURCE_ROOT; };
+		C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_body_top.png; path = ayalaInsideCebu/assets/img/bg_body_top.png; sourceTree = SOURCE_ROOT; };
+		C6C2FE5B1FC3B34100664FCC /* cross.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cross.svg; path = ayalaInsideCebu/assets/img/cross.svg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,41 +152,38 @@
 			path = html;
 			sourceTree = "<group>";
 		};
-		C67F47E41FC2908D0017CCEA /* css */ = {
+		C6C2FE611FC3B34800664FCC /* css */ = {
 			isa = PBXGroup;
 			children = (
-				C67F47E51FC2908D0017CCEA /* style.css */,
+				C6C2FE591FC3B34100664FCC /* style.css */,
 			);
-			name = css;
-			path = html/src/css;
-			sourceTree = SOURCE_ROOT;
+			path = css;
+			sourceTree = "<group>";
 		};
-		C67F47E61FC2908D0017CCEA /* img */ = {
+		C6C2FE621FC3B35400664FCC /* js */ = {
 			isa = PBXGroup;
 			children = (
-				C67F47E71FC2908D0017CCEA /* bg_body_top.png */,
-				C67F47E81FC2908D0017CCEA /* burger.svg */,
-				C67F47E91FC2908D0017CCEA /* cross.svg */,
+				C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */,
 			);
-			name = img;
-			path = html/src/img;
-			sourceTree = SOURCE_ROOT;
+			path = js;
+			sourceTree = "<group>";
 		};
-		C67F47EA1FC2908D0017CCEA /* js */ = {
+		C6C2FE631FC3B35C00664FCC /* img */ = {
 			isa = PBXGroup;
 			children = (
-				C67F47EB1FC2908D0017CCEA /* jquery-2.1.4.min.js */,
+				C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */,
+				C6C2FE571FC3B34100664FCC /* burger.svg */,
+				C6C2FE5B1FC3B34100664FCC /* cross.svg */,
 			);
-			name = js;
-			path = html/src/js;
-			sourceTree = SOURCE_ROOT;
+			path = img;
+			sourceTree = "<group>";
 		};
 		C6F0DD311FC1CE7600FCAB85 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				C67F47E41FC2908D0017CCEA /* css */,
-				C67F47E61FC2908D0017CCEA /* img */,
-				C67F47EA1FC2908D0017CCEA /* js */,
+				C6C2FE631FC3B35C00664FCC /* img */,
+				C6C2FE621FC3B35400664FCC /* js */,
+				C6C2FE611FC3B34800664FCC /* css */,
 				C67F47DD1FC290600017CCEA /* html */,
 			);
 			path = assets;
@@ -299,17 +296,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C67F47F01FC2908D0017CCEA /* jquery-2.1.4.min.js in Resources */,
+				C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */,
+				C6C2FE5E1FC3B34100664FCC /* style.css in Resources */,
 				C67F47E21FC290750017CCEA /* index.html in Resources */,
 				C67F47E11FC290750017CCEA /* helo.html in Resources */,
-				C67F47ED1FC2908D0017CCEA /* bg_body_top.png in Resources */,
-				C67F47EC1FC2908D0017CCEA /* style.css in Resources */,
-				C67F47EE1FC2908D0017CCEA /* burger.svg in Resources */,
+				C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */,
 				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
 				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
+				C6C2FE601FC3B34100664FCC /* cross.svg in Resources */,
+				C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */,
 				C67F47E31FC290750017CCEA /* map.html in Resources */,
-				C67F47EF1FC2908D0017CCEA /* cross.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
