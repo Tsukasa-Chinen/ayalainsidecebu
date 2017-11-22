@@ -33,7 +33,12 @@ a:focus {
 	color: inherit;
 	outline: none;
 }
-
+:placeholder-shown {
+    color: #fff;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
 .contents {
 	padding: 14% 5% 5%;
 }
@@ -171,22 +176,22 @@ a:focus {
 	width: 100%;
 	height: 100%;
 }
-.top__title {
+.where__title {
 	font-size: 3.4vw;
 	color: #fff;
 	padding: 20% 0 .6rem;
 	letter-spacing: .1rem;
 	border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
-.top__form {
+.where__form {
 	position: absolute;
 	bottom: 14%;
 	width: 90%;
 }
-.top__form_input_text {
+.where__form_input_text {
 	width: 100%;
 }
-.top__form_input_text input {
+.where__form_input_text input {
 	display: block;
 	width: 100%;
 	font-size: 140%;
@@ -201,21 +206,33 @@ a:focus {
 	-webkit-appearance: none;
 	        appearance: none;
 }
-.top__form_input_text + .top__form_input_text {
+.where__form_input_text + .where__form_input_text {
 	margin-top: 2rem;
 }
-:placeholder-shown {
-    color: #fff;
-}
-::-webkit-input-placeholder {
-    color: #fff;
+.where__form .where__form_submit {
+	display: block;
+	width: 50%;
+	font-size: 1.4rem;
+	border: none;
+	background: rgba(232, 74, 74, .8);
+	color: #fff;
+	padding: 1rem 0;
+	margin: 1rem auto 0;
+	border-radius: .3rem;
+	text-align: center;
+	text-decoration: none;
 }
 
 /* Map
 -------------------------------------- */
-#map {
-	background: url(map_lv_03.png) no-repeat center center;
-	background-size: 98% auto;
+#map .contents {
+	width: 100%;
+	padding: 0;
+	overflow: auto;
+}
+.map__view {
+	width: 220%;
+	outline: 1px solid red;
 }
 
 /* Shop

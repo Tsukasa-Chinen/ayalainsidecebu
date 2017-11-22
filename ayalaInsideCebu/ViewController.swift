@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         /* Load: Local HTML */
-        let htmlPath = Bundle.main.path(forResource: "map", ofType: "html")
+        let htmlPath = Bundle.main.path(forResource: "where", ofType: "html")
         let uri = URL(fileURLWithPath:htmlPath!)
         let uriRequest = URLRequest(url: uri)
         myWebView.load(uriRequest)

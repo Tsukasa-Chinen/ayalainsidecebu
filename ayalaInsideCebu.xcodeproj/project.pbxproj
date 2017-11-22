@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6212B661FC523A9003C4887 /* map-level-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C6212B651FC523A9003C4887 /* map-level-02.png */; };
 		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
 		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
 		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		C67B5A561FC4657200B1CB84 /* history.html in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A511FC4657200B1CB84 /* history.html */; };
 		C67B5A571FC4657200B1CB84 /* shop.html in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A521FC4657200B1CB84 /* shop.html */; };
 		C67B5A5B1FC4669900B1CB84 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A5A1FC4669900B1CB84 /* style.css */; };
-		C67B5A631FC4751A00B1CB84 /* map_lv_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A621FC4751A00B1CB84 /* map_lv_03.png */; };
 		C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE571FC3B34100664FCC /* burger.svg */; };
 		C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */; };
 		C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */; };
@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6212B651FC523A9003C4887 /* map-level-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-level-02.png"; path = "html/src/map-level-02.png"; sourceTree = SOURCE_ROOT; };
 		C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayalaInsideCebu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		C67B5A511FC4657200B1CB84 /* history.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = history.html; path = html/src/history.html; sourceTree = SOURCE_ROOT; };
 		C67B5A521FC4657200B1CB84 /* shop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = shop.html; path = html/src/shop.html; sourceTree = SOURCE_ROOT; };
 		C67B5A5A1FC4669900B1CB84 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = html/src/style.css; sourceTree = SOURCE_ROOT; };
-		C67B5A621FC4751A00B1CB84 /* map_lv_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_lv_03.png; path = ../../../../../../../Desktop/map_lv_03.png; sourceTree = "<group>"; };
 		C6C2FE571FC3B34100664FCC /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = burger.svg; path = ayalaInsideCebu/assets/img/burger.svg; sourceTree = SOURCE_ROOT; };
 		C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.4.min.js"; path = "ayalaInsideCebu/assets/js/jquery-2.1.4.min.js"; sourceTree = SOURCE_ROOT; };
 		C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_body_top.png; path = ayalaInsideCebu/assets/img/bg_body_top.png; sourceTree = SOURCE_ROOT; };
@@ -188,8 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				C67B5A471FC4654B00B1CB84 /* arrow_r.svg */,
+				C6212B651FC523A9003C4887 /* map-level-02.png */,
 				C67B5A461FC4654B00B1CB84 /* clock.svg */,
-				C67B5A621FC4751A00B1CB84 /* map_lv_03.png */,
 				C67B5A481FC4654B00B1CB84 /* search.svg */,
 				C67B5A491FC4654B00B1CB84 /* shop.svg */,
 				C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */,
@@ -318,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67B5A541FC4657200B1CB84 /* search.html in Resources */,
+				C6212B661FC523A9003C4887 /* map-level-02.png in Resources */,
 				C67B5A531FC4657200B1CB84 /* where.html in Resources */,
 				C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */,
 				C67B5A4C1FC4654B00B1CB84 /* search.svg in Resources */,
@@ -328,7 +329,6 @@
 				C67B5A551FC4657200B1CB84 /* map.html in Resources */,
 				C67B5A571FC4657200B1CB84 /* shop.html in Resources */,
 				C67B5A4D1FC4654B00B1CB84 /* shop.svg in Resources */,
-				C67B5A631FC4751A00B1CB84 /* map_lv_03.png in Resources */,
 				C67B5A4A1FC4654B00B1CB84 /* clock.svg in Resources */,
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
 				C67B5A5B1FC4669900B1CB84 /* style.css in Resources */,

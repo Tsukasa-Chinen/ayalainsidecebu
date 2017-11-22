@@ -10,13 +10,13 @@
 		<div class="contents">
 			<nav class="nav">
 			<header>
-				<h1 class="top__title">Ayala Inside Cebu</h1>
+				<h1 class="where__title">Ayala Inside Cebu</h1>
 			</header>
-			<div class="top__form">
-				<form action="./helo" method="post">
-					<p class="js_input_text top__form_input_text"><input type="text" name="start" placeholder="今いるお店の名前を入力して下さい"></p>
-					<p class="js_input_text top__form_input_text"><input type="text" name="goal" placeholder="行きたいお店の名前を入力してください"></p>
-				</form>				
+			<div class="where__form">
+				
+				<p class="js_input_text where__form_input_text"><input id="start" type="text" name="start" placeholder="今いるお店の名前を入力して下さい"></p>
+				<p class="js_input_text where__form_input_text"><input id="goal" type="text" name="goal" placeholder="行きたいお店の名前を入力してください"></p>
+				<a class="where__form_submit" href="./map.html">送 信</a>
 			</div>
 		</div>
 		<!-- /.contents -->
@@ -27,7 +27,8 @@
 $(function(){
 	$('.js_input_text input').on('focus', function(){
 		$(this).attr('placeholder', '');
-	});	
+	});
+	
 });
 </script>
 </body>
