@@ -162,26 +162,34 @@ a:focus {
 
 /* Top
 -------------------------------------- */
-#top {
-	background: url(bg_body_top.png) no-repeat center center;
+#where {
+	background: url(bg_where.jpg) fixed center top;
 	background-size: cover;
 }
-#top .wrapper {
+#where .wrapper {
 	width: 100%;
 	height: 100%;
 	background: rgba(76, 185, 284, .85);
 }
-#top .contents {
+#where .contents {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-.where__title {
+.where__title_main,
+.where__title_copy {
+	display: block;
+	letter-spacing: .2rem;
+	color: rgba(255, 255, 255, .8);
+} 
+.where__title_main {
 	font-size: 3.4vw;
-	color: #fff;
-	padding: 20% 0 .6rem;
-	letter-spacing: .1rem;
-	border-bottom: 1px solid rgba(255, 255, 255, .8);
+	padding: 0 0 .6rem;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	margin-bottom: .6rem;
+}
+.where__title_copy {
+	font-size: 1.2rem;
 }
 .where__form {
 	position: absolute;
