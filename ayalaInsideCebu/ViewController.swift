@@ -46,9 +46,16 @@ class ViewController: UIViewController, UIWebViewDelegate {
                 let item = (components?.queryItems?[i])! as URLQueryItem
                 print("キー：\(item.name)→値：\(String(describing: item.value))\n")
             }
-            return false
+            
+            /* Segure Map */
+            performSegue(withIdentifier: "segueMap", sender: nil)
+            return true
         }
         return true
+    }
+
+    /* OVERRIDE: prepare */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 
     override func didReceiveMemoryWarning() {

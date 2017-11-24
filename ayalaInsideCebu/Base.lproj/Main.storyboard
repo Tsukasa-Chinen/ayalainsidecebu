@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HrI-wG-oBm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5dK-It-LOl"/>
                             <constraint firstAttribute="trailing" secondItem="HrI-wG-oBm" secondAttribute="trailing" id="OuH-Jh-1uQ"/>
@@ -33,11 +33,39 @@
                     </view>
                     <connections>
                         <outlet property="whereWebView" destination="HrI-wG-oBm" id="jAD-1a-qiT"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueMap" id="dfQ-58-E1z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="YgL-Pa-rW6">
+            <objects>
+                <viewController id="uDv-Js-1r4" customClass="mapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="txP-cf-GF1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-2L-4Uw">
+                                <rect key="frame" x="131" y="231" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="95r-JW-vy6"/>
+                    </view>
+                    <connections>
+                        <outlet property="startLabel" destination="rJj-2L-4Uw" id="6Ue-hU-dpH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOQ-n8-AyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="133"/>
         </scene>
     </scenes>
 </document>
