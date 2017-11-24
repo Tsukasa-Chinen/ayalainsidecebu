@@ -43,7 +43,7 @@
         <!--Map View Controller-->
         <scene sceneID="YgL-Pa-rW6">
             <objects>
-                <viewController id="uDv-Js-1r4" customClass="mapViewController" sceneMemberID="viewController">
+                <viewController id="uDv-Js-1r4" customClass="mapViewController" customModule="ayalaInsideCebu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="txP-cf-GF1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
