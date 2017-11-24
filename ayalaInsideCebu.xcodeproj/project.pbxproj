@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6212B661FC523A9003C4887 /* map-level-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C6212B651FC523A9003C4887 /* map-level-02.png */; };
+		C63239F91FC7B95B0077D774 /* functions.js in Resources */ = {isa = PBXBuildFile; fileRef = C63239F81FC7B95B0077D774 /* functions.js */; };
 		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
 		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
 		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		C6212B651FC523A9003C4887 /* map-level-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-level-02.png"; path = "html/src/map-level-02.png"; sourceTree = SOURCE_ROOT; };
+		C63239F81FC7B95B0077D774 /* functions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = functions.js; sourceTree = "<group>"; };
 		C634202C1FBE8FF600D650FB /* ayalaInsideCebu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayalaInsideCebu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		C6C2FE621FC3B35400664FCC /* js */ = {
 			isa = PBXGroup;
 			children = (
+				C63239F81FC7B95B0077D774 /* functions.js */,
 				C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */,
 			);
 			path = js;
@@ -335,6 +338,7 @@
 				C6C2FE601FC3B34100664FCC /* cross.svg in Resources */,
 				C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */,
 				C67B5A561FC4657200B1CB84 /* history.html in Resources */,
+				C63239F91FC7B95B0077D774 /* functions.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

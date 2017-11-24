@@ -9,27 +9,51 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var myWebView: WKWebView!
+class ViewController: UIViewController, UIWebViewDelegate {
+    
+    @IBOutlet weak var whereWebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
-        /* Load: Local HTML */
-        let htmlPath = Bundle.main.path(forResource: "where", ofType: "html")
-        let uri = URL(fileURLWithPath:htmlPath!)
-        let uriRequest = URLRequest(url: uri)
-        myWebView.load(uriRequest)
-        
-    } /* END override */
+        /* Delegate */
+        whereWebView.delegate = self
 
+        /* Load File */
+        loadFile(resource: "functions", type: "js")
+        loadFile(resource: "where", type: "html")
+    }
     
+    /* CREATE: HTML or JS Load Function */
+    func loadFile(resource: String, type: String){
+        let filePath = Bundle.main.path(forResource: resource, ofType: type)
+        if(type == "js"){
+            let scriptContents = try! String(contentsOfFile: filePath!, encoding:String.Encoding.utf8)
+            whereWebView.stringByEvaluatingJavaScript(from: scriptContents)
+        }else if(type == "html"){
+            let url = URL(fileURLWithPath:filePath!)
+            let urlRequest = URLRequest(url: url)
+            whereWebView.loadRequest(urlRequest)
+        }
+    }
+    
+    /* CREATE: Get Data from JS Function */
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if(request.url!.scheme == "scheme") {
+            let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+            for i in 0 ..< (components?.queryItems?.count)! {
+                let item = (components?.queryItems?[i])! as URLQueryItem
+                print("キー：\(item.name)→値：\(String(describing: item.value))\n")
+            }
+            return false
+        }
+        return true
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    } /* END didReceiveMemoryWarning */
-
-
+    }
 }
 
