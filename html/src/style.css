@@ -217,19 +217,6 @@ a:focus {
 .where__form_input_text + .where__form_input_text {
 	margin-top: 2rem;
 }
-.where__form .where__form_submit {
-	display: block;
-	width: 50%;
-	font-size: 1.4rem;
-	border: none;
-	background: rgba(232, 74, 74, .8);
-	color: #fff;
-	padding: 1rem 0;
-	margin: 1rem auto 0;
-	border-radius: .3rem;
-	text-align: center;
-	text-decoration: none;
-}
 
 /* Map
 -------------------------------------- */

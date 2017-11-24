@@ -17,9 +17,8 @@
 			</header>
 			<div class="where__form">
 				
-				<p class="where__form_input_text"><input id="start" type="text" name="start" placeholder="今いるお店の名前を入力して下さい"></p>
-				<p class="where__form_input_text"><input id="goal" type="text" name="goal" placeholder="行きたいお店の名前を入力してください"></p>
-<!--				<a class="where__form_submit" href="./map.html">送 信</a>-->
+				<p class="where__form_input_text"><input type="text" name="start" placeholder="今いるお店の名前を入力して下さい"></p>
+				<p class="where__form_input_text"><input type="text" name="goal" placeholder="行きたいお店の名前を入力してください"></p>
 			</div>
 		</div>
 		<!-- /.contents -->
@@ -28,19 +27,14 @@
 <script src="./jquery-2.1.4.min.js"></script>
 <script>
 $(function(){
-/*
-$('.js_input_text input').on('focus', function(){
- $(this).attr('placeholder', '');
-});
-*/
-$('#start, #goal').on('blur', function(){
-    if($('#start').val() != '' && $('#goal').val() != ''){
-          sendDate();
-    }
-});
-
-  
-	
+    $('input[name="start"], input[name="goal"]').on('focus', function(){
+        $(this).attr('placeholder', '');
+    });
+    $('input[name="start"], input[name="goal"]').on('blur', function(){
+        if($('input[name="start"]').val() != '' && $('input[name="goal"]').val() != ''){
+            sendDate($('input[name="start"]').val(), $('input[name="goal"]').val());
+        }
+    });
 });
 </script>
 </body>
