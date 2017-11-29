@@ -4,15 +4,24 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./style.css">
+<style>
+    .start_shop {background: #ff0000;}
+    .goal_shop {background: #0000ff;}
+</style>
 </head>
 <body id="map">
 	<div class="wrapper">
 		<div class="contents">
-			<nav class="nav">
+            <ul id="test"></ul>
+<!--
+            <nav class="nav">
 				<a id="js_nav_button" class="nav__button" href="./map.html"></a>
 			</nav>
+ -->
 			<!-- /.nav -->
+            <!--
 			<div class="map__view"><img src="./map-level-02.png" alt=""></div>
+            -->
         </div>
 		<!-- /.contents -->
 	</div>
@@ -105,6 +114,24 @@
 <script src="./jquery-2.1.4.min.js"></script>
 <script>
 $(function(){
+
+	$.getJSON("ayaladate.json" , function($jsonData) {
+		var $ulObj = $("#test"),
+			$len = $jsonData.length;
+	
+		for(var i = 0; i < $len; i++) {
+			var $addClass = '';
+
+			if($jsonData[i].id == $startShopName){
+				$addClass = 'start_shop';
+			}
+			if($jsonData[i].id == $goalShopName){
+				$addClass = 'goal_shop';
+			}
+			$ulObj.append($('<li>').attr({'data-shop-id': $jsonData[i].id}).attr({'data-shop-floor': $jsonData[i].floor}).addClass($addClass).text($jsonData[i].shop));
+		}
+	});
+    
 	$('#js_nav_button').on('click', function(){
 		if(!$(this).hasClass('on')){
 			$(this).addClass('on');

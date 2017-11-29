@@ -1,0 +1,33 @@
+[
+  {
+	   "shop": "Red Box"
+	  ,"floor": "lv-01"
+	  ,"id": "AE-01"
+  },
+  {
+	   "shop": "158 Designer's Blvd"
+	  ,"floor": "lv-01"
+	  ,"id": "RB-01"
+  },
+  {
+	   "shop": "Arrow"
+	  ,"floor": "lv-01"
+	  ,"id": "APP-04"
+  },
+  {
+	   "shop": "Artwork"
+	  ,"floor": "lv-02"
+	  ,"id": "SBH-01"
+  },
+  {
+	   "shop": "93rd&1st"
+	  ,"floor": "lv-04"
+	  ,"id": "SER-04"
+  },
+  {
+	   "shop": "Bistro Ecila"
+	  ,"floor": "lv-03"
+	  ,"id": "OVV-04"
+  }
+]
+

@@ -31,7 +31,8 @@ $(function(){
         $(this).attr('placeholder', '');
     });
     $('input[name="start"], input[name="goal"]').on('blur', function(){
-        if($('input[name="start"]').val() != '' && $('input[name="goal"]').val() != ''){
+        //if($('input[name="start"]').val() != '' && $('input[name="goal"]').val() != ''){
+        if($('input[name="goal"]').val() != ''){
             sendDate($('input[name="start"]').val(), $('input[name="goal"]').val());
         }
     });

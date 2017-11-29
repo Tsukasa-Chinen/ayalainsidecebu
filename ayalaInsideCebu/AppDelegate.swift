@@ -13,6 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    /* CREATE: HTML or JS Load Function */
+    func loadFile(webViewName:UIWebView!, resource: String, type: String){
+        let filePath = Bundle.main.path(forResource: resource, ofType: type)
+        if(type == "js"){
+            let scriptContents = try! String(contentsOfFile: filePath!, encoding:String.Encoding.utf8)
+            webViewName.stringByEvaluatingJavaScript(from: scriptContents)
+        }else if(type == "html"){
+            let url = URL(fileURLWithPath:filePath!)
+            let urlRequest = URLRequest(url: url)
+            webViewName.loadRequest(urlRequest)
+        }
+    }
+
+
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -39,7 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
+
 

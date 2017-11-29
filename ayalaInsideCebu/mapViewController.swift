@@ -7,19 +7,58 @@
 //
 
 import UIKit
+import WebKit
 
-class mapViewController: UIViewController {
+class mapViewController: UIViewController, UIWebViewDelegate {
 
-    var startVal:String = "start"
-    var goalVal:String = "goal"
+    // appDeligateをインスタンス化
+    let appDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
-    @IBOutlet weak var startLabel: UILabel!
+    @IBOutlet weak var mapWebView: UIWebView!
+    
+    /* フォームからの値を変数に代入 */
+    var getStart:String = "none"
+    var getGoal:String  = "none"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-    
+        /* Load File */
+        appDeligate.loadFile(webViewName:mapWebView, resource: "map", type: "html")
+
+        /* ayaladate.json内のデータをフォームに入力された値で検索
+         ---------------------------------------------------------------------*/
+        // ayaladate.jsonを読み込む
+        let filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json")
+        // Data型（人が読めない形式）でデータを取得
+        let jsondata = NSData(contentsOfFile: filePath!)
+        // Data型（人が読めない形式）でデータを取得
+        let jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! Array<Any>
+
+        var shopStartID:String = "none"
+        var shopGoalID:String  = "none"
+
+        // 配列の中身を高速列挙で表示・検索
+        for dat in jsonArray {
+            let dic = dat as! NSDictionary
+            let shopName = dic["shop"] as! String
+
+            // Start
+            if shopName == getStart {
+                shopStartID = dic["id"] as! String
+            }
+
+            // Goal
+            if shopName == getGoal {
+                shopGoalID = dic["id"] as! String
+            }
+        }
+        let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
+        let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
+        let script = scriptStart + scriptGoal
+        mapWebView.stringByEvaluatingJavaScript(from: script)
+
     }
 
     override func didReceiveMemoryWarning() {

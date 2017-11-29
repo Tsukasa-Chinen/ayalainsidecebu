@@ -27,6 +27,7 @@
 		C67B5A561FC4657200B1CB84 /* history.html in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A511FC4657200B1CB84 /* history.html */; };
 		C67B5A571FC4657200B1CB84 /* shop.html in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A521FC4657200B1CB84 /* shop.html */; };
 		C67B5A5B1FC4669900B1CB84 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A5A1FC4669900B1CB84 /* style.css */; };
+		C686AB781FCCEE4500E1CA39 /* ayaladate.json in Resources */ = {isa = PBXBuildFile; fileRef = C686AB771FCCEE4500E1CA39 /* ayaladate.json */; };
 		C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE571FC3B34100664FCC /* burger.svg */; };
 		C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */; };
 		C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */; };
@@ -77,6 +78,7 @@
 		C67B5A511FC4657200B1CB84 /* history.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = history.html; path = html/src/history.html; sourceTree = SOURCE_ROOT; };
 		C67B5A521FC4657200B1CB84 /* shop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = shop.html; path = html/src/shop.html; sourceTree = SOURCE_ROOT; };
 		C67B5A5A1FC4669900B1CB84 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = html/src/style.css; sourceTree = SOURCE_ROOT; };
+		C686AB771FCCEE4500E1CA39 /* ayaladate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ayaladate.json; sourceTree = "<group>"; };
 		C6C2FE571FC3B34100664FCC /* burger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = burger.svg; path = ayalaInsideCebu/assets/img/burger.svg; sourceTree = SOURCE_ROOT; };
 		C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.4.min.js"; path = "ayalaInsideCebu/assets/js/jquery-2.1.4.min.js"; sourceTree = SOURCE_ROOT; };
 		C6C2FE5A1FC3B34100664FCC /* bg_body_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_body_top.png; path = ayalaInsideCebu/assets/img/bg_body_top.png; sourceTree = SOURCE_ROOT; };
@@ -173,6 +175,14 @@
 			path = html;
 			sourceTree = "<group>";
 		};
+		C686AB761FCCEE3700E1CA39 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				C686AB771FCCEE4500E1CA39 /* ayaladate.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 		C6C2FE611FC3B34800664FCC /* css */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +218,7 @@
 		C6F0DD311FC1CE7600FCAB85 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				C686AB761FCCEE3700E1CA39 /* json */,
 				C6C2FE631FC3B35C00664FCC /* img */,
 				C6C2FE621FC3B35400664FCC /* js */,
 				C6C2FE611FC3B34800664FCC /* css */,
@@ -339,6 +350,7 @@
 				C63420351FBE8FF600D650FB /* Main.storyboard in Resources */,
 				C67B5A5B1FC4669900B1CB84 /* style.css in Resources */,
 				C6C2FE601FC3B34100664FCC /* cross.svg in Resources */,
+				C686AB781FCCEE4500E1CA39 /* ayaladate.json in Resources */,
 				C6C2FE5C1FC3B34100664FCC /* burger.svg in Resources */,
 				C67B5A561FC4657200B1CB84 /* history.html in Resources */,
 				C63239F91FC7B95B0077D774 /* functions.js in Resources */,
