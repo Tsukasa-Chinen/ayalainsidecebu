@@ -12,84 +12,36 @@
 				<a class="nav__button on" href="./map.html"></a>
 			</nav>
 			<!-- /.nav -->
-			<div class="shop__list_wrapper">
-				<dl class="shop__list">
-					<dt>AMUSEMENT AND ENTERTAINMENT</dt>
-					<dd><a href="#">Red Box</a></dd>
-					<dd><a href="#">Timezone</a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>APPAREL</dt>
-					<dd><a href="#">158 Designer's Blvd</a></dd>
-					<dd><a href="#">Adina</a></dd>
-					<dd><a href="#">Arrow</a></dd>
-					<dd><a href="#">Artwork</a></dd>
-					<dd><a href="#">AW Giftshoppe</a></dd>
-					<dd><a href="#">Bayo Boutique</a></dd>
-					<dd><a href="#">Bench</a></dd>
-					<dd><a href="#">Bisaya Ispisyal </a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>BOOKSTORES / OFFICE SUPPLIES</dt>
-					<dd><a href="#">Fully Booked</a></dd>
-					<dd><a href="#">National Bookstore </a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>CAKE / BAKESHOP / DESSERTS</dt>
-					<dd><a href="#">Aji Ichiban</a></dd>
-					<dd><a href="#">Bo's Coffee</a></dd>
-					<dd><a href="#">Breadtalk</a></dd>
-					<dd><a href="#">Dunkin Donuts</a></dd>
-					<dd><a href="#">158 Designer's Blvd </a></dd>
-					<dd><a href="#">Adina</a></dd>
-					<dd><a href="#">Arrow</a></dd>
-					<dd><a href="#">Artwork</a></dd>
-					<dd><a href="#">AW Giftshoppe</a></dd>
-					<dd><a href="#">Bayo Boutique</a></dd>
-					<dd><a href="#">Bench</a></dd>
-					<dd><a href="#">Bisaya Ispisyal </a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>AMUSEMENT AND ENTERTAINMENT</dt>
-					<dd><a href="#">Red Box</a></dd>
-					<dd><a href="#">Timezone</a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>APPAREL</dt>
-					<dd><a href="#">158 Designer's Blvd</a></dd>
-					<dd><a href="#">Adina</a></dd>
-					<dd><a href="#">Arrow</a></dd>
-					<dd><a href="#">Artwork</a></dd>
-					<dd><a href="#">AW Giftshoppe</a></dd>
-					<dd><a href="#">Bayo Boutique</a></dd>
-					<dd><a href="#">Bench</a></dd>
-					<dd><a href="#">Bisaya Ispisyal </a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>BOOKSTORES / OFFICE SUPPLIES</dt>
-					<dd><a href="#">Fully Booked</a></dd>
-					<dd><a href="#">National Bookstore </a></dd>
-				</dl>
-				<dl class="shop__list">
-					<dt>CAKE / BAKESHOP / DESSERTS</dt>
-					<dd><a href="#">Aji Ichiban</a></dd>
-					<dd><a href="#">Bo's Coffee</a></dd>
-					<dd><a href="#">Breadtalk</a></dd>
-					<dd><a href="#">Dunkin Donuts</a></dd>
-					<dd><a href="#">158 Designer's Blvd </a></dd>
-					<dd><a href="#">Adina</a></dd>
-					<dd><a href="#">Arrow</a></dd>
-					<dd><a href="#">Artwork</a></dd>
-					<dd><a href="#">AW Giftshoppe</a></dd>
-					<dd><a href="#">Bayo Boutique</a></dd>
-					<dd><a href="#">Bench</a></dd>
-					<dd><a href="#">Bisaya Ispisyal </a></dd>
-				</dl>
+			<div id="shop_list" class="shop__list_wrapper">
 			</div>
 		</div>
 		<!-- /.contents -->
 	</div>
 	<!-- /.wrapper -->
 <script src="./jquery-2.1.4.min.js"></script>
+<script src="./common.js"></script>
+<script>
+$(function(){
+    /* JSON */
+    $.getJSON("ayaladate.json" , function($jsonData) {
+        var $ulObj = $("#shop_list"),
+            $len = $jsonData.length;
+            
+        for(var i = 0; i < $len; i++) {
+			if($jsonData[i].id.match(/AE/)){
+		        $cat = 'AMUSEMENT AND ENTERTAINMENT';
+			}else if($jsonData[i].id.match(/AP/)){
+		        $cat = 'APPAREL';
+			}else if($jsonData[i].id.match(/BOOK/)){
+				$cat = 'BOOKSTORES/OFFICE SUPPLIES';
+			}else{
+		        $cat = '';				
+			}
+	        
+            $ulObj.append('<dl class="shop__list"><dt>' + $cat + '</dt><dd><a data-shop-id="' + $jsonData[i].id + '" data-shop-floor="' + $jsonData[i].floor + '" data-shop-name="' + $jsonData[i].shop + '">' + $jsonData[i].shop + '</a></dd></dl>');
+        }
+    });
+});
+</script>
 </body>
 </html>

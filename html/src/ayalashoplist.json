@@ -2,8 +2,7 @@
     {
         "category": "AMUSEMENT AND ENTERTAINMENT",
         "shopinfo": [
-             { "name": "Red Box", "floor": "lv01", "id": "am01"},
-			 { "name": "jo", "floor": "lv01", "id": "am01"}
+             { "name": "Red Box", "floor": "lv01", "id": "am01"}
         ]
     },
     {

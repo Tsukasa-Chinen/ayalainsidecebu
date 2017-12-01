@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C606BF351FCE538F005F9AA8 /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = C606BF341FCE538F005F9AA8 /* common.js */; };
+		C606BF371FCE5BD3005F9AA8 /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */; };
 		C6212B661FC523A9003C4887 /* map-level-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C6212B651FC523A9003C4887 /* map-level-02.png */; };
 		C63239F91FC7B95B0077D774 /* functions.js in Resources */ = {isa = PBXBuildFile; fileRef = C63239F81FC7B95B0077D774 /* functions.js */; };
 		C63239FB1FC7C9010077D774 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63239FA1FC7C9010077D774 /* mapViewController.swift */; };
@@ -17,6 +19,7 @@
 		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
+		C6663E791FD0F5460078BD11 /* backup.json in Resources */ = {isa = PBXBuildFile; fileRef = C6663E781FD0F5460078BD11 /* backup.json */; };
 		C67B5A4A1FC4654B00B1CB84 /* clock.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A461FC4654B00B1CB84 /* clock.svg */; };
 		C67B5A4B1FC4654B00B1CB84 /* arrow_r.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A471FC4654B00B1CB84 /* arrow_r.svg */; };
 		C67B5A4C1FC4654B00B1CB84 /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A481FC4654B00B1CB84 /* search.svg */; };
@@ -52,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C606BF341FCE538F005F9AA8 /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
+		C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
 		C6212B651FC523A9003C4887 /* map-level-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-level-02.png"; path = "html/src/map-level-02.png"; sourceTree = SOURCE_ROOT; };
 		C63239F81FC7B95B0077D774 /* functions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = functions.js; sourceTree = "<group>"; };
 		C63239FA1FC7C9010077D774 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		C634204B1FBE8FF600D650FB /* ayalaInsideCebuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
 		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6663E781FD0F5460078BD11 /* backup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backup.json; sourceTree = "<group>"; };
 		C67B5A461FC4654B00B1CB84 /* clock.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = clock.svg; path = html/src/clock.svg; sourceTree = SOURCE_ROOT; };
 		C67B5A471FC4654B00B1CB84 /* arrow_r.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = arrow_r.svg; path = html/src/arrow_r.svg; sourceTree = SOURCE_ROOT; };
 		C67B5A481FC4654B00B1CB84 /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = search.svg; path = html/src/search.svg; sourceTree = SOURCE_ROOT; };
@@ -110,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C606BF381FCE5C12005F9AA8 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				C63239FA1FC7C9010077D774 /* mapViewController.swift */,
+				C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
 		C63420231FBE8FF600D650FB = {
 			isa = PBXGroup;
 			children = (
@@ -133,10 +148,10 @@
 		C634202E1FBE8FF600D650FB /* ayalaInsideCebu */ = {
 			isa = PBXGroup;
 			children = (
+				C606BF381FCE5C12005F9AA8 /* viewController */,
 				C6F0DD311FC1CE7600FCAB85 /* assets */,
 				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
 				C63420311FBE8FF600D650FB /* ViewController.swift */,
-				C63239FA1FC7C9010077D774 /* mapViewController.swift */,
 				C63420331FBE8FF600D650FB /* Main.storyboard */,
 				C63420361FBE8FF600D650FB /* Assets.xcassets */,
 				C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */,
@@ -179,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				C686AB771FCCEE4500E1CA39 /* ayaladate.json */,
+				C6663E781FD0F5460078BD11 /* backup.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -194,6 +210,7 @@
 		C6C2FE621FC3B35400664FCC /* js */ = {
 			isa = PBXGroup;
 			children = (
+				C606BF341FCE538F005F9AA8 /* common.js */,
 				C63239F81FC7B95B0077D774 /* functions.js */,
 				C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */,
 			);
@@ -335,11 +352,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67B5A541FC4657200B1CB84 /* search.html in Resources */,
+				C606BF351FCE538F005F9AA8 /* common.js in Resources */,
 				C6212B661FC523A9003C4887 /* map-level-02.png in Resources */,
 				C67B5A531FC4657200B1CB84 /* where.html in Resources */,
 				C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */,
 				C67B5A4C1FC4654B00B1CB84 /* search.svg in Resources */,
 				C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */,
+				C6663E791FD0F5460078BD11 /* backup.json in Resources */,
 				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
 				C67B5A4B1FC4654B00B1CB84 /* arrow_r.svg in Resources */,
 				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
@@ -378,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C606BF371FCE5BD3005F9AA8 /* shopViewController.swift in Sources */,
 				C63239FB1FC7C9010077D774 /* mapViewController.swift in Sources */,
 				C63420321FBE8FF600D650FB /* ViewController.swift in Sources */,
 				C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */,

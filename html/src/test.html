@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+			<div class="shop__list_wrapper">
+				<ul id="shop_list">
+					
+				</ul>
+			</div>
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+    $.getJSON('./ayalashoplist.json', function(data){
+        for(var i in data){
+        $('#shop_list').append('<li class="shop__category">' + data[i].category + '</li>');
+            for(var j in data[i].shopinfo){
+                $('#shop_list').append('<li class="shop__info">' + data[i].shopinfo[j].name + '（' + data[i].shopinfo[j].floor + '才）</li>\n');
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>

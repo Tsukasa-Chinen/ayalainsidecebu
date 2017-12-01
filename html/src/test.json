@@ -1,0 +1,15 @@
+[
+	{
+    	"category": "AMUSEMENT AND ENTERTAINMENT",
+		"shopinfo": [
+        	{ "name": "Red Box", "floor": "lv01", "id": "am01"}
+
+		]
+	},
+	{
+    	"category": "APPAREL",
+		"shopinfo": [
+        	{ "name": "Arrow", "floor": "lv01", "id": "am01"}
+		]
+	}
+]
