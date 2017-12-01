@@ -16,7 +16,7 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mapWebView: UIWebView!
     
-    /* フォームからの値を変数に代入 */
+    /* フォームからの値を変数に代入するため予め変数を定義しておく */
     var getStart:String = "none"
     var getGoal:String  = "none"
 
@@ -29,29 +29,17 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 
         /* ayaladate.json内のデータをフォームに入力された値で検索
          ---------------------------------------------------------------------*/
-//		// ayaladate.jsonを読み込む
-//        let filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json")
-//        // Data型（人が読めない形式）でデータを取得
-//        let jsondata = NSData(contentsOfFile: filePath!)
-//        // Data型（人が読めない形式）でデータを取得
-//        let jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! Array<Any>
-
         var shopStartID:String = "none"
         var shopGoalID:String  = "none"
 
-		// ayaladate.jsonを読み込む
-		var filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json")
-		
-		// Data型（人が読めない形式）でデータを取得
-		var jsondata = NSData(contentsOfFile: filePath!)
-		
-		// 配列データに変換
-		var jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! NSArray
+		var filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json") // ayaladate.jsonを読み込む
+		var jsondata = NSData(contentsOfFile: filePath!) // Data型（人が読めない形式）でデータを取得
+		var jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! NSArray // 配列データに変換
 
 		for date in jsonArray {
 			var values = date as! Dictionary<String, Any>
 
-			var category = values["category"] as! String
+			//var category = values["category"] as! String
 			var shopsInfo = values["shopinfo"] as! NSArray
 			var shopsCount = shopsInfo.count
 			
@@ -59,34 +47,27 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			for i in 0..<shopsCount{
 				num += i
 				var shopInfo = shopsInfo[num] as! NSDictionary
-				print("店名：\(shopInfo["name"])")
-				print("ID：\(shopInfo["id"])")
-				print("フロアー：\(shopInfo["floor"])")
+				//print("店名：\(shopInfo["name"])、ID：\(shopInfo["id"])、フロアー：\(shopInfo["floor"])")
+				
+				var shopName = shopInfo["name"] as! String
+				var shopID = shopInfo["id"] as! String
+
+				// Start
+				if shopName == getStart {
+					shopStartID = shopID
+				}
+				// Goal
+				if shopName == getGoal {
+					shopGoalID = shopID
+				}
 			}
+			let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
+			let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
+			let script = scriptStart + scriptGoal
+			mapWebView.stringByEvaluatingJavaScript(from: script)
 		}
-		
-		// 配列の中身を高速列挙で表示・検索
-//        for dat in jsonArray {
-//            let dic = dat as! NSDictionary
-//            let shopName = dic["shop"] as! String
-//
-//            // Start
-//           if shopName == getStart {
-//                shopStartID = dic["id"] as! String
-//           }
-//
-//            // Goal
-//            if shopName == getGoal {
-//                shopGoalID = dic["id"] as! String
-//            }
-//        }
-//        let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
-//        let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
-//        let script = scriptStart + scriptGoal
-//        mapWebView.stringByEvaluatingJavaScript(from: script)
-
-    }
-
+	}
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
