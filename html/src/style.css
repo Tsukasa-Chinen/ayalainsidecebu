@@ -306,7 +306,10 @@ a:focus {
 	font-size: 1.4rem;
 	padding-top: 1.8rem;	
 }
-.search__list a {
+.search__list li {
+	display: none;
+}
+.search__list span {
 	display: block;
 	position: relative;
 	padding: 1rem 0 1rem .2rem;
@@ -314,7 +317,7 @@ a:focus {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
-.search__list li:first-of-type a {
+.search__list li:first-of-type span {
 	border-top: 1px solid rgba(255, 255, 255, .5);
 }
 .search__list .arrow {
@@ -324,4 +327,7 @@ a:focus {
 	right: .4rem;
 	width: 1.4rem;
 	transform: translate(0, -50%);
+}
+.search__not_found {
+	display: none;
 }

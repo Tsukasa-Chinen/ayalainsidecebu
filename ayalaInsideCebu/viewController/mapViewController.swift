@@ -32,25 +32,25 @@ class mapViewController: UIViewController, UIWebViewDelegate {
         var shopStartID:String = "none"
         var shopGoalID:String  = "none"
 
-		var filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json") // ayaladate.jsonを読み込む
-		var jsondata = NSData(contentsOfFile: filePath!) // Data型（人が読めない形式）でデータを取得
-		var jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! NSArray // 配列データに変換
+		let filePath = Bundle.main.path(forResource: "ayaladate", ofType: "json") // ayaladate.jsonを読み込む
+		let jsondata = NSData(contentsOfFile: filePath!) // Data型（人が読めない形式）でデータを取得
+		let jsonArray = (try! JSONSerialization.jsonObject(with: Data.init(referencing: jsondata!))) as! NSArray // 配列データに変換
 
 		for date in jsonArray {
 			var values = date as! Dictionary<String, Any>
 
 			//var category = values["category"] as! String
-			var shopsInfo = values["shopinfo"] as! NSArray
-			var shopsCount = shopsInfo.count
+			let shopsInfo = values["shopinfo"] as! NSArray
+			let shopsCount = shopsInfo.count
 			
 			var num:Int = 0
 			for i in 0..<shopsCount{
 				num += i
-				var shopInfo = shopsInfo[num] as! NSDictionary
+				let shopInfo = shopsInfo[num] as! NSDictionary
 				//print("店名：\(shopInfo["name"])、ID：\(shopInfo["id"])、フロアー：\(shopInfo["floor"])")
 				
-				var shopName = shopInfo["name"] as! String
-				var shopID = shopInfo["id"] as! String
+				let shopName = shopInfo["name"] as! String
+				let shopID = shopInfo["id"] as! String
 
 				// Start
 				if shopName == getStart {

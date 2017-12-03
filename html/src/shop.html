@@ -12,35 +12,30 @@
 				<a class="nav__button on" href="./map.html"></a>
 			</nav>
 			<!-- /.nav -->
-			<div id="shop_list" class="shop__list_wrapper">
+			<div id="shop_list" class="shop__list">
 			</div>
 		</div>
 		<!-- /.contents -->
 	</div>
 	<!-- /.wrapper -->
-<script src="./jquery-2.1.4.min.js"></script>
-<script src="./common.js"></script>
+<script src='./jquery-2.1.4.min.js'></script>
+<script src='./common.js'></script>
 <script>
 $(function(){
-    /* JSON */
-    $.getJSON("ayaladate.json" , function($jsonData) {
-        var $ulObj = $("#shop_list"),
-            $len = $jsonData.length;
-            
-        for(var i = 0; i < $len; i++) {
-			if($jsonData[i].id.match(/AE/)){
-		        $cat = 'AMUSEMENT AND ENTERTAINMENT';
-			}else if($jsonData[i].id.match(/AP/)){
-		        $cat = 'APPAREL';
-			}else if($jsonData[i].id.match(/BOOK/)){
-				$cat = 'BOOKSTORES/OFFICE SUPPLIES';
-			}else{
-		        $cat = '';				
+
+	/* JSON */
+	$.getJSON('ayaladate.json' , function($jsonDate) {
+		var $shopListElement = '';
+
+		for(var $i in $jsonDate){
+			$shopListElement += '<dl><dt>' + $i +$jsonDate[$i].category + '</dt>';
+			for(var $j in $jsonDate[$i].shopinfo){
+				$shopListElement += '<dd>' + $jsonDate[$i].shopinfo[$j].name + '（フロア：' + $jsonDate[$i].shopinfo[$j].floor + '、ID：' + $jsonDate[$i].shopinfo[$j].id + '）</dd>';
 			}
-	        
-            $ulObj.append('<dl class="shop__list"><dt>' + $cat + '</dt><dd><a data-shop-id="' + $jsonData[i].id + '" data-shop-floor="' + $jsonData[i].floor + '" data-shop-name="' + $jsonData[i].shop + '">' + $jsonData[i].shop + '</a></dd></dl>');
-        }
-    });
+			$shopListElement += '</dl>';
+		}
+		$('#shop_list').append($shopListElement);
+	});
 });
 </script>
 </body>

@@ -5,26 +5,20 @@
     <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./style.css">
 <style>
-    #shop_list {
-        display: flex;
-    }
-    #shop_list li {
-        width: 44px;
-        height: 44px;
-        background: #eee;
-    }
-    #shop_list li.start_shop {background: #ff0000;}
-    #shop_list li.goal_shop {background: #0000ff;}
+    [data-start] {color: #ff0000;}
+    [data-goal] {color: #0000ff;}
 </style>
 </head>
 <body id="map">
 	<div class="wrapper">
 		<div class="contents">
-            <nav class="nav">
+<!--
+			<nav class="nav">
                 <a id="js_nav_button" class="nav__button" href="./map.html"></a>
             </nav>
+ -->
             <!-- /.nav -->
-            <ul id="shop_list"></ul>
+            <div id="shop_list" class="shop__list"></div>
             <!--
 			<div class="map__view"><img src="./map-level-02.png" alt=""></div>
             -->
@@ -121,23 +115,32 @@
 <script src="./common.js"></script>
 <script>
 $(function(){
-    /* JSON */
-    $.getJSON("ayaladate.json" , function($jsonData) {
-        var $ulObj = $("#shop_list"),
-            $len = $jsonData.length;
+	/* JSON */
+	$.getJSON('ayaladate.json' , function($jsonDate) {
+		  var $shopListElement = '',
+			  $startShop = '',
+			  $goalShop = '';
 
-        for(var i = 0; i < $len; i++) {
-            var $addClass = '';
+		  for(var $i in $jsonDate){
+			for(var $j in $jsonDate[$i].shopinfo){
+			  /* Start Shop */
+			  if($jsonDate[$i].shopinfo[$j].id == $startShopName){
+				  $startShop = ' data-start="start"';
+			  }else{
+				  $startShop = '';
+			  }
 
-            if($jsonData[i].id == "Red Box"){
-                $addClass = 'start_shop';
-            }
-            if($jsonData[i].id == "Arrow"){
-                $addClass = 'goal_shop';
-            }
-            $ulObj.append($('<li>').attr({'data-shop-id': $jsonData[i].id}).attr({'data-shop-floor': $jsonData[i].floor}).addClass($addClass).text($jsonData[i].shop));
-        }
-    });
+			  /* Goal Shop */
+			  if($jsonDate[$i].shopinfo[$j].id == $goalShopName){
+				  $goalShop = ' data-goal="goal"';
+			  }else{
+				  $goalShop = '';
+			  }
+			  $shopListElement += '<div' + $startShop + $goalShop + '>' + $jsonDate[$i].shopinfo[$j].id + '（' + $startShop + $goalShop + '）</div>';
+		  }
+		}
+		$('#shop_list').append($shopListElement);
+	});
 });
 </script>
 </body>

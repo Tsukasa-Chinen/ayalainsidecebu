@@ -14,28 +14,53 @@
 			<!-- /.nav -->
 			<div class="search__list_wrapper">
 				<div class="search__list_form">
-					<form action="" method="post">
-						<input type="text" placeholder="行きたいお店の名前を入力してください">
-					</form>					
+					<input id="search_input" type="text" placeholder="行きたいお店の名前を入力してください">
 				</div>
 				<!-- /.search__list_form -->
-				<ul class="search__list">
-					<li><a href="#">Red Box<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Timezone<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">158 Designer's Blvd<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Adina<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Arrow<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Artwork<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">AW Giftshoppe<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Bayo Boutique<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Bench<img class="arrow" src="./arrow_r.svg"></a></li>
-					<li><a href="#">Bisaya Ispisyal<img class="arrow" src="./arrow_r.svg"></a></li>					
-				</ul>
+				<div class="search__list">					
+					<ul id="shop_list">
+					</ul>
+					<p id="not_found" class="search__not_found">Sorry, Not Found.</p>
+				</div>
 			</div>
 		</div>
 		<!-- /.contents -->
 	</div>
 	<!-- /.wrapper -->
 <script src="./jquery-2.1.4.min.js"></script>
+<script src='./common.js'></script>
+<script>
+$(function(){
+
+	/* JSON */
+	$.getJSON('ayaladate.json' , function($jsonDate) {
+		var $shopListElement = '';
+
+		for(var $i in $jsonDate){
+			for(var $j in $jsonDate[$i].shopinfo){
+				$shopListElement += '<li class="' + $jsonDate[$i].shopinfo[$j].name + '"><span>' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></span></li>';
+			}
+		}
+		$('#shop_list').append($shopListElement);
+	});
+	
+	/* Search Box */
+	$('#search_input').on('blur', function(){
+		var $searchVal = $(this).val();
+
+		if($searchVal != ''){			
+			$('#shop_list li').each(function(){
+				if($(this).hasClass($searchVal)){
+					$('#not_found').css({'display': 'none'});				
+					$(this).fadeIn();				
+				}else if(!$(this).hasClass($searchVal)){
+					$('#shop_list li').css({'display': 'none'});	
+					$('#not_found').fadeIn();				
+				}
+			});
+		}
+    });
+});
+</script>
 </body>
 </html>
