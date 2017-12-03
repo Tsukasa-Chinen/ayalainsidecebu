@@ -317,9 +317,6 @@ a:focus {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
-.search__list li:first-of-type span {
-	border-top: 1px solid rgba(255, 255, 255, .5);
-}
 .search__list .arrow {
 	display: inline-block;
 	position: absolute;
@@ -327,7 +324,4 @@ a:focus {
 	right: .4rem;
 	width: 1.4rem;
 	transform: translate(0, -50%);
-}
-.search__not_found {
-	display: none;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0rS-mL-W05">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -95,12 +95,44 @@
                         <viewLayoutGuide key="safeArea" id="9sI-il-rJD"/>
                     </view>
                     <connections>
+                        <outlet property="searchWebView" destination="Abb-aK-Yjf" id="75e-I9-cYA"/>
                         <outlet property="shopWebView" destination="Abb-aK-Yjf" id="Fh8-uX-dm2"/>
+                        <segue destination="0rS-mL-W05" kind="show" id="mIK-qv-64a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgX-Fg-HA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="ObE-EN-7Bs">
+            <objects>
+                <viewController id="0rS-mL-W05" customClass="searchViewController" customModule="ayalaInsideCebu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07O-kC-67o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKq-Qs-1Ss">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NKq-Qs-1Ss" firstAttribute="bottom" secondItem="5j0-Gv-bDe" secondAttribute="bottom" id="6Op-r9-4R0"/>
+                            <constraint firstItem="NKq-Qs-1Ss" firstAttribute="leading" secondItem="07O-kC-67o" secondAttribute="leading" id="Nmy-Nm-aGx"/>
+                            <constraint firstItem="NKq-Qs-1Ss" firstAttribute="top" secondItem="07O-kC-67o" secondAttribute="top" id="Sm4-Xt-28w"/>
+                            <constraint firstAttribute="trailing" secondItem="NKq-Qs-1Ss" secondAttribute="trailing" id="UPd-cB-Z66"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5j0-Gv-bDe"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchWebView" destination="NKq-Qs-1Ss" id="WOg-tw-i0n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPe-1g-c7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514.4000000000001" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="suS-pk-QDt">
