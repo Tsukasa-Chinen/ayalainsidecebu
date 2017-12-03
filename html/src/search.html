@@ -14,7 +14,7 @@
 			<!-- /.nav -->
 			<div class="search__list_wrapper">
 				<div class="search__list_form">
-					<input id="search_input" type="text" placeholder="行きたいお店の名前を入力してください">
+					<input id="search_input" class="search__list_form_input" type="text" placeholder="お店の名前を入力してください">
 				</div>
 				<!-- /.search__list_form -->
 				<div class="search__list">					
@@ -53,7 +53,7 @@ $(function(){
 
 		if($searchVal != ''){	
 			$('#shop_list li').each(function(){
-				if($(this).data('shop-name').indexOf($searchVal) === 0){
+				if($(this).data('shop-name').indexOf($searchVal) > -1){
 					$(this).fadeIn();				
 				}
 			});

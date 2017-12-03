@@ -33,12 +33,6 @@ a:focus {
 	color: inherit;
 	outline: none;
 }
-:placeholder-shown {
-    color: #fff;
-}
-::-webkit-input-placeholder {
-    color: #fff;
-}
 .contents {
 	padding: 14% 5% 5%;
 }
@@ -214,6 +208,9 @@ a:focus {
 	-webkit-appearance: none;
 	        appearance: none;
 }
+.where__form_input_text input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .8);
+}
 .where__form_input_text + .where__form_input_text {
 	margin-top: 2rem;
 }
@@ -294,7 +291,7 @@ a:focus {
 .search__list_form {
 	padding-top: 1.8rem;	
 }
-.search__list_form input {
+.search__list_form_input {
 	width: 100%;
 	font-size: 1.6rem;
 	border: none;
@@ -302,8 +299,11 @@ a:focus {
 	padding: .6rem .4rem;
 	color: rgba(130, 130, 130, .5);
 }
-.search__list_form input:focus {
+.search__list_form_input:focus {
 	color: rgba(130, 130, 130, 1);
+}
+.search__list_form_input::-webkit-input-placeholder {
+	color: rgba(63, 24, 24, .25);
 }
 .search__list {
 	font-size: 1.4rem;

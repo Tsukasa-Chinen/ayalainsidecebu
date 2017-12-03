@@ -12,11 +12,9 @@
 <body id="map">
 	<div class="wrapper">
 		<div class="contents">
-<!--
 			<nav class="nav">
                 <a id="js_nav_button" class="nav__button" href="./map.html"></a>
             </nav>
- -->
             <!-- /.nav -->
             <div id="shop_list" class="shop__list"></div>
             <!--
@@ -123,15 +121,16 @@ $(function(){
 
 		  for(var $i in $jsonDate){
 			for(var $j in $jsonDate[$i].shopinfo){
+
 			  /* Start Shop */
-			  if($jsonDate[$i].shopinfo[$j].id == $startShopName){
-				  $startShop = ' data-start="start"';
+			  if($jsonDate[$i].shopinfo[$j].id.indexOf($startShopName) === 0){
+				  $startShop = ' data-start="start"' + $startShopName;
 			  }else{
 				  $startShop = '';
 			  }
 
 			  /* Goal Shop */
-			  if($jsonDate[$i].shopinfo[$j].id == $goalShopName){
+			  if($jsonDate[$i].shopinfo[$j].id.indexOf($goalShopName) === 0){
 				  $goalShop = ' data-goal="goal"';
 			  }else{
 				  $goalShop = '';

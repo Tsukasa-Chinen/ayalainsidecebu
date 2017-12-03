@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Foundation
 
 class mapViewController: UIViewController, UIWebViewDelegate {
 
@@ -26,7 +27,7 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 
         /* Load File */
         appDeligate.loadFile(webViewName:mapWebView, resource: "map", type: "html")
-
+		
         /* ayaladate.json内のデータをフォームに入力された値で検索
          ---------------------------------------------------------------------*/
         var shopStartID:String = "none"
@@ -47,9 +48,9 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			for i in 0..<shopsCount{
 				num += i
 				let shopInfo = shopsInfo[num] as! NSDictionary
-				//print("店名：\(shopInfo["name"])、ID：\(shopInfo["id"])、フロアー：\(shopInfo["floor"])")
 				
-				let shopName = shopInfo["name"] as! String
+				let getShopName = shopInfo["name"] as! String
+				let shopName = getShopName.lowercased().replacingOccurrences(of: " ", with: "-")
 				let shopID = shopInfo["id"] as! String
 
 				// Start
@@ -60,12 +61,14 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 				if shopName == getGoal {
 					shopGoalID = shopID
 				}
+				print(shopName)
+				print(shopID)
 			}
 			let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
 			let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
 			let script = scriptStart + scriptGoal
 			mapWebView.stringByEvaluatingJavaScript(from: script)
-		}
+		}	
 	}
 	
     override func didReceiveMemoryWarning() {

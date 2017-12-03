@@ -16,7 +16,6 @@
 				</h1>
 			</header>
 			<div class="where__form">
-				
 				<p class="where__form_input_text"><input type="text" name="start" placeholder="今いるお店の名前を入力して下さい"></p>
 				<p class="where__form_input_text"><input type="text" name="goal" placeholder="行きたいお店の名前を入力してください"></p>
 			</div>
@@ -32,9 +31,11 @@ $(function(){
         $(this).attr('placeholder', '');
     });
     $('input[name="start"], input[name="goal"]').on('blur', function(){
-        //if($('input[name="start"]').val() != '' && $('input[name="goal"]').val() != ''){
         if($('input[name="goal"]').val() != ''){
-            sendDate($('input[name="start"]').val(), $('input[name="goal"]').val());
+			var $inputStartShop = $('input[name="start"]').val().replace(/\s/g, '-').toLowerCase(),
+				$inputGoalShop = $('input[name="goal"]').val().replace(/\s/g, '-').toLowerCase();
+													
+            sendDate($inputStartShop, $inputGoalShop);
         }
     });
 });
