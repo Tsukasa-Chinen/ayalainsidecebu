@@ -20,6 +20,7 @@
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
 		C64C368C1FD44CD400BDD082 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64C368B1FD44CD400BDD082 /* searchViewController.swift */; };
+		C64C368E1FD46D6100BDD082 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64C368D1FD46D6100BDD082 /* historyViewController.swift */; };
 		C67B5A4A1FC4654B00B1CB84 /* clock.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A461FC4654B00B1CB84 /* clock.svg */; };
 		C67B5A4B1FC4654B00B1CB84 /* arrow_r.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A471FC4654B00B1CB84 /* arrow_r.svg */; };
 		C67B5A4C1FC4654B00B1CB84 /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = C67B5A481FC4654B00B1CB84 /* search.svg */; };
@@ -74,6 +75,7 @@
 		C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ayalaInsideCebuUITests.swift; sourceTree = "<group>"; };
 		C63420511FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64C368B1FD44CD400BDD082 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		C64C368D1FD46D6100BDD082 /* historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
 		C67B5A461FC4654B00B1CB84 /* clock.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = clock.svg; path = html/src/clock.svg; sourceTree = SOURCE_ROOT; };
 		C67B5A471FC4654B00B1CB84 /* arrow_r.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = arrow_r.svg; path = html/src/arrow_r.svg; sourceTree = SOURCE_ROOT; };
 		C67B5A481FC4654B00B1CB84 /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = search.svg; path = html/src/search.svg; sourceTree = SOURCE_ROOT; };
@@ -122,6 +124,7 @@
 				C63239FA1FC7C9010077D774 /* mapViewController.swift */,
 				C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */,
 				C64C368B1FD44CD400BDD082 /* searchViewController.swift */,
+				C64C368D1FD46D6100BDD082 /* historyViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				C63239FB1FC7C9010077D774 /* mapViewController.swift in Sources */,
 				C63420321FBE8FF600D650FB /* ViewController.swift in Sources */,
 				C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */,
+				C64C368E1FD46D6100BDD082 /* historyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

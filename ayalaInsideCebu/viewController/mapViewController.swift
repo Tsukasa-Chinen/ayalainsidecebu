@@ -25,10 +25,14 @@ class mapViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        /* Load File */
+		/* Delegate */
+		mapWebView.delegate = self
+
+		/* Load File */
+		appDeligate.loadFile(webViewName:mapWebView, resource: "functions", type: "js")
         appDeligate.loadFile(webViewName:mapWebView, resource: "map", type: "html")
 		
-        /* ayaladate.json内のデータをフォームに入力された値で検索
+        /* ayaladate.json内のデータとフォームに入力された値で検索
          ---------------------------------------------------------------------*/
         var shopStartID:String = "none"
         var shopGoalID:String  = "none"
@@ -61,8 +65,8 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 				if shopName == getGoal {
 					shopGoalID = shopID
 				}
-				print(shopName)
-				print(shopID)
+				// print(shopName)
+				// print(shopID)
 			}
 			let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
 			let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
@@ -70,7 +74,51 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			mapWebView.stringByEvaluatingJavaScript(from: script)
 		}	
 	}
+
+	/* CREATE: Get Data from JS Function */
+	var selectedPage:String = "none"
+	var selectedPageSegue:String = "none"
 	
+	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+		if(request.url!.scheme == "scheme") {
+			let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+			for i in 0 ..< (components?.queryItems?.count)! {
+				let page = (components?.queryItems?[i])! as URLQueryItem
+				
+				/* Get Page Type */
+				if(page.name == "page"){
+					selectedPage = page.value!
+				}
+				print(selectedPage)
+
+				/* Set Segure */
+				switch selectedPage {
+					case "history":
+						selectedPageSegue = "segueHistory"
+					case "map":
+						selectedPageSegue = "segueMap"
+					case "search":
+						selectedPageSegue = "segueSearch"
+					case "shop":
+						selectedPageSegue = "segueShop"
+					default:
+						selectedPageSegue = ""
+				}
+			}
+			print(selectedPageSegue)
+
+			/* Segure */
+			performSegue(withIdentifier: "segueShop", sender: nil)
+
+			return false
+		}
+		return true
+	}
+	
+	/* OVERRIDE: prepare */
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+	}
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

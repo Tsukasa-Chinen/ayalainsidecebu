@@ -95,7 +95,7 @@ a:focus {
 	width: 95%;
 	transform: translate(-50%, -50%);
 }
-.modal__menu a {
+.modal__menu .btn {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -103,7 +103,7 @@ a:focus {
 	border-bottom: 1px solid rgba(255, 255, 255, .2);
 	padding: 1.5rem 0 1.4rem;
 }
-.modal__menu li:first-of-type a {
+.modal__menu li:first-of-type .btn {
 	border-top: 1px solid rgba(255, 255, 255, .2);
 }
 .modal__menu_image {
