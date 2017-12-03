@@ -1,4 +1,6 @@
 $(function(){
+	
+	
     /* Navigation */
     $('#js_nav_button').on('click', function(){
         if(!$(this).hasClass('on')){

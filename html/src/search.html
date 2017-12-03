@@ -18,10 +18,11 @@
 				</div>
 				<!-- /.search__list_form -->
 				<div class="search__list">					
-					<ul id="shop_list">
-					</ul>
+					<ul id="shop_list"></ul>
 				</div>
+				<!-- /.search__list -->
 			</div>
+			<!-- /.search__list_wrapper -->
 		</div>
 		<!-- /.contents -->
 	</div>
@@ -37,7 +38,7 @@ $(function(){
 
 		for(var $i in $jsonDate){
 			for(var $j in $jsonDate[$i].shopinfo){
-				$shopListElement += '<li data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '"><span>' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></span></li>';
+				$shopListElement += '<li data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '"><a href="#">' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></a></li>';
 			}
 		}
 		$('#shop_list').append($shopListElement);
@@ -53,7 +54,6 @@ $(function(){
 		if($searchVal != ''){	
 			$('#shop_list li').each(function(){
 				if($(this).data('shop-name').indexOf($searchVal) === 0){
-					$('#not_found').css({'display': 'none'});				
 					$(this).fadeIn();				
 				}
 			});
