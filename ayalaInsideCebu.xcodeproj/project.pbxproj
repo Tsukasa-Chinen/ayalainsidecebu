@@ -121,6 +121,7 @@
 		C606BF381FCE5C12005F9AA8 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				C63420311FBE8FF600D650FB /* ViewController.swift */,
 				C63239FA1FC7C9010077D774 /* mapViewController.swift */,
 				C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */,
 				C64C368B1FD44CD400BDD082 /* searchViewController.swift */,
@@ -152,7 +153,6 @@
 		C634202E1FBE8FF600D650FB /* ayalaInsideCebu */ = {
 			isa = PBXGroup;
 			children = (
-				C63420311FBE8FF600D650FB /* ViewController.swift */,
 				C606BF381FCE5C12005F9AA8 /* viewController */,
 				C6F0DD311FC1CE7600FCAB85 /* assets */,
 				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
