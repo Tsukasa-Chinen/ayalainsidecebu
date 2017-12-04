@@ -47,7 +47,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
             }
             
             /* Segure */
-            performSegue(withIdentifier: "segueMap", sender: nil)
+            performSegue(withIdentifier: "segueWhereToMap", sender: nil)
             return false
         }
         return true

@@ -152,10 +152,10 @@
 		C634202E1FBE8FF600D650FB /* ayalaInsideCebu */ = {
 			isa = PBXGroup;
 			children = (
+				C63420311FBE8FF600D650FB /* ViewController.swift */,
 				C606BF381FCE5C12005F9AA8 /* viewController */,
 				C6F0DD311FC1CE7600FCAB85 /* assets */,
 				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
-				C63420311FBE8FF600D650FB /* ViewController.swift */,
 				C63420331FBE8FF600D650FB /* Main.storyboard */,
 				C63420361FBE8FF600D650FB /* Assets.xcassets */,
 				C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */,

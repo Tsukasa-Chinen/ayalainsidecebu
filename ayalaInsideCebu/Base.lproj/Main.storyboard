@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uDv-Js-1r4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,12 +34,12 @@
                     <navigationItem key="navigationItem" id="dAb-Kq-Hlp"/>
                     <connections>
                         <outlet property="whereWebView" destination="HrI-wG-oBm" id="jAD-1a-qiT"/>
-                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueMap" id="M1D-iD-pbd"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueWhereToMap" id="M1D-iD-pbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2454" y="897"/>
+            <point key="canvasLocation" x="-2775" y="617"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="YgL-Pa-rW6">
@@ -65,12 +65,15 @@
                     </view>
                     <connections>
                         <outlet property="mapWebView" destination="yQ5-bQ-ato" id="YuC-Kj-dwt"/>
-                        <segue destination="yd7-Ut-KoC" kind="show" identifier="segueShop" id="3GH-pd-0VN"/>
+                        <segue destination="yd7-Ut-KoC" kind="show" identifier="segueMapToShop" id="3GH-pd-0VN"/>
+                        <segue destination="0rS-mL-W05" kind="show" identifier="segueMapToSearch" id="tN5-35-uQb"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueMapToWhere" id="czj-WH-eVn"/>
+                        <segue destination="UIc-HG-d8n" kind="show" identifier="segueMapToHistory" id="cM3-XM-chE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOQ-n8-AyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1702" y="896"/>
+            <point key="canvasLocation" x="-1522" y="-164"/>
         </scene>
         <!--Shop View Controller-->
         <scene sceneID="nYQ-r2-kI0">
@@ -97,11 +100,12 @@
                     <connections>
                         <outlet property="shopWebView" destination="Abb-aK-Yjf" id="Fh8-uX-dm2"/>
                         <segue destination="0rS-mL-W05" kind="show" identifier="segueSearch" id="sC3-gz-4A1"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueShopToMap" id="1pX-XI-Mxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgX-Fg-HA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-962" y="896"/>
+            <point key="canvasLocation" x="-556" y="617"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="ObE-EN-7Bs">
@@ -128,11 +132,12 @@
                     <connections>
                         <outlet property="searchWebView" destination="NKq-Qs-1Ss" id="WOg-tw-i0n"/>
                         <segue destination="UIc-HG-d8n" kind="show" identifier="segueHistory" id="t6G-S2-Y2w"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueSearchToMap" id="tZx-N0-oas"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPe-1g-c7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-209" y="896"/>
+            <point key="canvasLocation" x="273" y="-520"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="0iY-CW-JQG">
@@ -141,13 +146,29 @@
                     <view key="view" contentMode="scaleToFill" id="ZAz-jJ-OhJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-ew-zTS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iNa-ew-zTS" firstAttribute="leading" secondItem="ZAz-jJ-OhJ" secondAttribute="leading" id="Es7-og-Pe2"/>
+                            <constraint firstAttribute="trailing" secondItem="iNa-ew-zTS" secondAttribute="trailing" id="JSY-HZ-OwW"/>
+                            <constraint firstItem="iNa-ew-zTS" firstAttribute="top" secondItem="ZAz-jJ-OhJ" secondAttribute="top" id="bA2-Hc-F2X"/>
+                            <constraint firstItem="iNa-ew-zTS" firstAttribute="bottom" secondItem="i6Y-IY-Htf" secondAttribute="bottom" id="tiD-a7-xez"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="i6Y-IY-Htf"/>
                     </view>
+                    <connections>
+                        <outlet property="historyWebView" destination="iNa-ew-zTS" id="pL5-NV-VVr"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueHistoryToMap" id="deY-Ny-XY5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYj-Ic-Shl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="896"/>
+            <point key="canvasLocation" x="1407" y="617"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="suS-pk-QDt">
@@ -167,7 +188,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMR-Zd-lqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-535" y="133"/>
+            <point key="canvasLocation" x="-3542" y="-164"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t6G-S2-Y2w"/>
+        <segue reference="tN5-35-uQb"/>
+        <segue reference="deY-Ny-XY5"/>
+        <segue reference="czj-WH-eVn"/>
+    </inferredMetricsTieBreakers>
 </document>

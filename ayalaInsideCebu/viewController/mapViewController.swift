@@ -89,26 +89,26 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 				if(page.name == "page"){
 					selectedPage = page.value!
 				}
-				print(selectedPage)
+				// print(selectedPage)
 
 				/* Set Segure */
 				switch selectedPage {
 					case "history":
-						selectedPageSegue = "segueHistory"
-					case "map":
-						selectedPageSegue = "segueMap"
+						selectedPageSegue = "segueMapToHistory"
 					case "search":
-						selectedPageSegue = "segueSearch"
+						selectedPageSegue = "segueMapToSearch" // OK
 					case "shop":
-						selectedPageSegue = "segueShop"
+						selectedPageSegue = "segueMapToShop" // OK
+					case "where":
+						selectedPageSegue = "segueMapToWhere" // OK
 					default:
 						selectedPageSegue = ""
 				}
 			}
-			print(selectedPageSegue)
+			// print(selectedPageSegue)
 
 			/* Segure */
-			performSegue(withIdentifier: "segueShop", sender: nil)
+			performSegue(withIdentifier: selectedPageSegue, sender: nil)
 
 			return false
 		}

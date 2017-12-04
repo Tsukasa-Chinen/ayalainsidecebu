@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="contents">
 			<nav class="nav">
-				<a class="nav__button on" href="./map.html"></a>
+				<span id="back_btn" class="nav__button on" data-scheme="map"></span>
 			</nav>
 			<!-- /.nav -->
 			<div class="history__list_wrapper">
@@ -44,6 +44,18 @@
 		<!-- /.contents -->
 	</div>
 	<!-- /.wrapper -->
-<script src="./jquery-2.1.4.min.js"></script>
+<script src='./jquery-2.1.4.min.js'></script>
+<script src='./common.js'></script>
+<script>
+$(function(){
+
+	$('#back_btn').on('click', function(){
+		movePage($(this).data('scheme'));
+	});
+});
+</script>
+
+
+
 </body>
 </html>

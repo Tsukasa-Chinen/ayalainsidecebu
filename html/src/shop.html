@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="contents">
 			<nav class="nav">
-				<a class="nav__button on" href="./map.html"></a>
+				<span id="back_btn" class="nav__button on" data-scheme="map"></span>
 			</nav>
 			<!-- /.nav -->
 			<div id="shop_list" class="shop__list">
@@ -28,13 +28,17 @@ $(function(){
 		var $shopListElement = '';
 
 		for(var $i in $jsonDate){
-			$shopListElement += '<dl><dt>' + $i +$jsonDate[$i].category + '</dt>';
+			$shopListElement += '<dl><dt>' + $jsonDate[$i].category + '</dt>';
 			for(var $j in $jsonDate[$i].shopinfo){
 				$shopListElement += '<dd>' + $jsonDate[$i].shopinfo[$j].name + '（フロア：' + $jsonDate[$i].shopinfo[$j].floor + '、ID：' + $jsonDate[$i].shopinfo[$j].id + '）</dd>';
 			}
 			$shopListElement += '</dl>';
 		}
 		$('#shop_list').append($shopListElement);
+	});
+
+	$('#back_btn').on('click', function(){
+		movePage($(this).data('scheme'));
 	});
 });
 </script>

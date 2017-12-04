@@ -20,11 +20,31 @@ class shopViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        /* Load File */
-        appDeligate.loadFile(webViewName:shopWebView, resource: "shop", type: "html")
+		/* Delegate */
+		shopWebView.delegate = self
 
-    
+		/* Load File */
+		appDeligate.loadFile(webViewName:shopWebView, resource: "functions", type: "js")
+        appDeligate.loadFile(webViewName:shopWebView, resource: "shop", type: "html")
     }
+
+	/* CREATE: Get Data from JS Function */
+	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+		if(request.url!.scheme == "scheme") {
+			let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+			for i in 0 ..< (components?.queryItems?.count)! {
+				let page = (components?.queryItems?[i])! as URLQueryItem
+				
+				/* Get Page Type */
+				if(page.name == "page"){
+					/* Segure */
+					performSegue(withIdentifier: "segueShopToMap", sender: nil)
+				}
+			}
+			return false
+		}
+		return true
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

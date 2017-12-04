@@ -21,10 +21,32 @@ class searchViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+		/* Delegate */
+		searchWebView.delegate = self
+
 		/* Load File */
+		appDeligate.loadFile(webViewName:searchWebView, resource: "functions", type: "js")
 		appDeligate.loadFile(webViewName:searchWebView, resource: "search", type: "html")
 
     }
+
+	/* CREATE: Get Data from JS Function */
+	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+		if(request.url!.scheme == "scheme") {
+			let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+			for i in 0 ..< (components?.queryItems?.count)! {
+				let page = (components?.queryItems?[i])! as URLQueryItem
+				
+				/* Get Page Type */
+				if(page.name == "page"){
+					/* Segure */
+					performSegue(withIdentifier: "segueSearchToMap", sender: nil)
+				}
+			}
+			return false
+		}
+		return true
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

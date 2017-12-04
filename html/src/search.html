@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="contents">
 			<nav class="nav">
-				<a class="nav__button on" href="./map.html"></a>
+				<span id="back_btn" class="nav__button on" data-scheme="map"></span>
 			</nav>
 			<!-- /.nav -->
 			<div class="search__list_wrapper">
@@ -59,6 +59,11 @@ $(function(){
 			});
 		}
     });
+
+	$('#back_btn').on('click', function(){
+		movePage($(this).data('scheme'));
+	});
+
 });
 </script>
 </body>
