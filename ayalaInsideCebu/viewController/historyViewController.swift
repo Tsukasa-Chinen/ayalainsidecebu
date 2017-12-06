@@ -40,27 +40,25 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		// どのエンティティからデータを取得してくるかを設定（Historyエンティティ）
 		let letQuery:NSFetchRequest<History> = History.fetchRequest()
 		
-		// データを一括取得
 		// きちんと保存できてるか、1行ずつ表示（デバッグエリア）
 		do {
 			let fetchResults = try letViewContext.fetch(letQuery)
 			for result: AnyObject in fetchResults {
 				let letShopID: String = result.value(forKey: "shopID") as! String
+				let letShopName: String = result.value(forKey: "shopName") as! String
+				let letShopFloor: String = result.value(forKey: "shopFloor") as! String
 				let letDate: Date = result.value(forKey: "date") as! Date
 
 				let df = DateFormatter();
 				df.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "en_PH"))
 				df.dateStyle = .medium
-				df.timeStyle = .none
-				df.doesRelativeDateFormatting = true
-
+				
 				var dic = ["shopID": letShopID, "date": df.string(from: letDate)] as! [String:Any]
 				contentTitle.append(dic as NSDictionary)
 			}
 			
 			// DictionaryをJSONデータに変換
 			let jsonData = try JSONSerialization.data(withJSONObject: contentTitle)
-
 			// JSONデータを文字列に変換
 			let jsonStr = String(bytes: jsonData, encoding: .utf8)!
 			print(jsonStr)
@@ -77,11 +75,8 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 			for i in 0 ..< (components?.queryItems?.count)! {
 				let page = (components?.queryItems?[i])! as URLQueryItem
 				
-				/* Get Page Type */
-				if(page.name == "page"){
-					/* Segure */
-					performSegue(withIdentifier: "segueHistoryToMap", sender: nil)
-				}
+				/* Segure */
+				performSegue(withIdentifier: "segueHistoryToMap", sender: nil)
 			}
 			return false
 		}

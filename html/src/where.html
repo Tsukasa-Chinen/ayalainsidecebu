@@ -24,6 +24,7 @@
 	</div>
 	<!-- /.wrapper -->
 <script src="./jquery-2.1.4.min.js"></script>
+<script src="./jquery.mobile.custom.min.js"></script>
 <script src="./common.js"></script>
 <script>
 $(function(){
@@ -35,10 +36,10 @@ $(function(){
         if($('input[name="goal"]').val() != ''){
 			var $inputStartShop = $('input[name="start"]').val().replace(/\s/g, '-').toLowerCase(),
 				$inputGoalShop = $('input[name="goal"]').val().replace(/\s/g, '-').toLowerCase();
-													
+
             sendDate($inputStartShop, $inputGoalShop);
         }
-    });
+	});
 });
 </script>
 </body>

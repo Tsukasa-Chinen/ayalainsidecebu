@@ -129,11 +129,11 @@
 		C606BF381FCE5C12005F9AA8 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				C63420311FBE8FF600D650FB /* ViewController.swift */,
+				C64C368D1FD46D6100BDD082 /* historyViewController.swift */,
 				C63239FA1FC7C9010077D774 /* mapViewController.swift */,
 				C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */,
 				C64C368B1FD44CD400BDD082 /* searchViewController.swift */,
-				C64C368D1FD46D6100BDD082 /* historyViewController.swift */,
+				C63420311FBE8FF600D650FB /* ViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -224,10 +224,10 @@
 		C6C2FE621FC3B35400664FCC /* js */ = {
 			isa = PBXGroup;
 			children = (
-				C62D97C71FD63CA000E1C037 /* jquery.mobile.custom.min.js */,
 				C606BF341FCE538F005F9AA8 /* common.js */,
 				C63239F81FC7B95B0077D774 /* functions.js */,
 				C6C2FE581FC3B34100664FCC /* jquery-2.1.4.min.js */,
+				C62D97C71FD63CA000E1C037 /* jquery.mobile.custom.min.js */,
 			);
 			path = js;
 			sourceTree = "<group>";

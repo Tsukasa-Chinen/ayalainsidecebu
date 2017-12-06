@@ -9,6 +9,6 @@ function movePage($pageType) {
 }
 
 /* ショップID, フロア */
-function sendShopInfo($id, $floor) {
-	window.location =　'scheme://func?shop_id=' + $id + '&shop_floor=' + $floor;
+function sendShopInfo($id, $name, $floor) {
+	window.location =　'scheme://func?shop_id=' + $id + '&shop_name=' + $name + '&shop_floor=' + $floor;
 }

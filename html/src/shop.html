@@ -45,7 +45,7 @@ $(function(){
 
 	/* Send to Map */
 	$(document).on('tap', '.js_shop_info', function(){
-		sendShopInfo($(this).data('shop-id'), $(this).data('shop-floor'));
+		sendShopInfo($(this).data('shop-id'), $(this).text(), $(this).data('shop-floor'));
 	});
 });
 </script>

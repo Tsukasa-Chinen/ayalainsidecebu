@@ -39,7 +39,7 @@ $(function(){
 
 		for(var $i in $jsonDate){
 			for(var $j in $jsonDate[$i].shopinfo){
-				$shopListElement += '<li data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '"><span class="js_shop_info" data-shop-id="' + $jsonDate[$i].shopinfo[$j].shopID + '" data-shop-floor="' + $jsonDate[$i].shopinfo[$j].floor + '">' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></span></li>';
+				$shopListElement += '<li><span class="js_shop_info" data-shop-id="' + $jsonDate[$i].shopinfo[$j].shopID + '" data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '" data-shop-floor="' + $jsonDate[$i].shopinfo[$j].floor + '">' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></span></li>';
 			}
 		}
 		$('#shop_list').append($shopListElement);
@@ -52,7 +52,7 @@ $(function(){
 
 		if($searchVal != ''){	
 			$('#shop_list li').each(function(){
-				if($(this).data('shop-name').indexOf($searchVal) > -1){
+				if($('.js_shop_info', this).data('shop-name').indexOf($searchVal) > -1){
 					$(this).fadeIn();				
 				}
 			});
@@ -66,7 +66,7 @@ $(function(){
 
 	/* Send to Map */
 	$(document).on('tap', '.js_shop_info', function(){
-		sendShopInfo($(this).data('shop-id'), $(this).data('shop-floor'));
+	   sendShopInfo($(this).data('shop-id'), $(this).data('shop-name'), $(this).data('shop-floor'));
 	});
   
 });

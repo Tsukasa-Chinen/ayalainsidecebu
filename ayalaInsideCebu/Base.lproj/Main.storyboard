@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIc-HG-d8n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="haP-oP-bq8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -164,6 +164,7 @@
                     </view>
                     <connections>
                         <outlet property="historyWebView" destination="iNa-ew-zTS" id="pL5-NV-VVr"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueHistoryToMap" id="aDr-mt-Z2R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYj-Ic-Shl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,7 +194,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sC3-gz-4A1"/>
-        <segue reference="zVV-Hn-nPg"/>
-        <segue reference="czj-WH-eVn"/>
+        <segue reference="aDr-mt-Z2R"/>
+        <segue reference="Deo-iH-7Ss"/>
     </inferredMetricsTieBreakers>
 </document>
