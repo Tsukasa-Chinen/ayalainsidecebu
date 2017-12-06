@@ -13,31 +13,7 @@
 			</nav>
 			<!-- /.nav -->
 			<div class="history__list_wrapper">
-				<dl class="history__list">
-					<dd><a href="#">Red Box<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Timezone<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">158 Designer's Blvd<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Adina<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Arrow<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Artwork<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">AW Giftshoppe<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bayo Boutique<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bench<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bisaya Ispisyal<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Fully Booked<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">National Bookstore<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Aji Ichiban<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bo's Coffee<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Breadtalk<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Dunkin Donuts<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">158 Designer's Blvd<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Adina<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Arrow<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Artwork<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">AW Giftshoppe<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bayo Boutique<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bench<img class="arrow" src="./arrow_r.svg"></a></dd>
-					<dd><a href="#">Bisaya Ispisyal<img class="arrow" src="./arrow_r.svg"></a></dd>
+				<dl id="history_list" class="history__list">
 				</dl>
 			</div>
 		</div>
@@ -49,16 +25,19 @@
 <script src='./common.js'></script>
 <script>
 $(function(){
+	for(var i in $scriptCoreDataJSON){
+		$("#history_list").append('<dd class="js_shop_info" data-shop-id="' + $scriptCoreDataJSON[i].shopID + '" data-shop-name="' + $scriptCoreDataJSON[i].shopName + '" data-shop-floor="' + $scriptCoreDataJSON[i].shopFloor + '"><span>' + $scriptCoreDataJSON[i].shopName + '<img class="arrow" src="./arrow_r.svg"></span></dd>');
+	}
+ 
 	/* back to Map */
 	$(document).on('tap', '#back_btn', function(){
 		movePage($(this).data('page'));
 	});
 
-	/* Send to Map */
+  /* Send to Map */
 	$(document).on('tap', '.js_shop_info', function(){
-		sendShopInfo($(this).data('shop-id'), $(this).data('shop-floor'));
+		sendShopInfo($(this).data('shop-id'), $(this).data('shop-name'), $(this).data('shop-floor'));
 	});
-
 });
 </script>
 </body>

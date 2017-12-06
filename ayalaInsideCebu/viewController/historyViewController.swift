@@ -29,7 +29,7 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		appDeligate.loadFile(webViewName:historyWebView, resource: "functions", type: "js")
 		appDeligate.loadFile(webViewName:historyWebView, resource: "history", type: "html")
 		
-		var contentTitle:[NSDictionary] = []
+		var coreDataDic:[NSDictionary] = []
 		
 		// AppDelegateを使う用意をしておく
 		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -53,19 +53,21 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 				df.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "en_PH"))
 				df.dateStyle = .medium
 				
-				var dic = ["shopID": letShopID, "date": df.string(from: letDate)] as! [String:Any]
-				contentTitle.append(dic as NSDictionary)
+				var dic = ["shopID": letShopID, "shopName": letShopName, "shopFloor": letShopFloor, "date": df.string(from: letDate)] as! [String:Any]
+				coreDataDic.append(dic as NSDictionary)
 			}
 			
 			// DictionaryをJSONデータに変換
-			let jsonData = try JSONSerialization.data(withJSONObject: contentTitle)
+			let jsonData = try JSONSerialization.data(withJSONObject: coreDataDic)
 			// JSONデータを文字列に変換
 			let jsonStr = String(bytes: jsonData, encoding: .utf8)!
 			print(jsonStr)
+			
+			let scriptCoreDataJSON = "var $scriptCoreDataJSON = \(jsonStr);"
+			historyWebView.stringByEvaluatingJavaScript(from: scriptCoreDataJSON)
 		}
 		catch {
 		}
-		//print(contentTitle)
 	}
 
 	/* CREATE: Get Data from JS Function */

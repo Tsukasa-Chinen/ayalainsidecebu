@@ -30,6 +30,7 @@ class shopViewController: UIViewController, UIWebViewDelegate {
     }
 	
 	var selectID: String = "none"
+	var selectName: String = "none"
 	var selectFloor: String = "none"
 	
 	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
@@ -40,13 +41,15 @@ class shopViewController: UIViewController, UIWebViewDelegate {
 				
 				if(shopInfo.name == "shop_id"){
 					selectID = shopInfo.value!
+				}else if(shopInfo.name == "shop_name"){
+					selectName = shopInfo.value!
 				}else if(shopInfo.name == "shop_floor"){
 					selectFloor = shopInfo.value!
 				}
 			}
 
 			/* Save CoreData */
-			appDeligate.saveCoreData (entity: "History", shopID: selectID)
+			appDeligate.saveCoreData (entity: "History", shopID: selectID, shopName: selectName, shopFloor: selectFloor)
 
 			/* Segure */
 			performSegue(withIdentifier: "segueShopToMap", sender: nil)

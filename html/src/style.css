@@ -261,7 +261,7 @@ a:focus {
 	font-size: 1.4rem;
 	padding-top: 1.8rem;
 }
-.history__list a {
+.history__list span {
 	display: block;
 	position: relative;
 	padding: 1rem 0 1rem .2rem;

@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 	/* Save:  CareData */
-	func saveCoreData(entity: String, shopID: String){
+	func saveCoreData(entity: String, shopID: String, shopName: String, shopFloor: String){
 		// Core Dataに保存
 		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
 	
@@ -43,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 		// 値のセット
 		letNewRecord.setValue(shopID, forKey: "shopID") // shopID列に文字をセット
+		letNewRecord.setValue(shopName, forKey: "shopName") // shopID列に文字をセット
+		letNewRecord.setValue(shopFloor, forKey: "shopFloor") // shopID列に文字をセット
 		letNewRecord.setValue(Date(), forKey: "date") // Data列に現在日時をセット
 	
 		// レコード（行）の即時保存
