@@ -7,6 +7,7 @@
 <style>
     [data-start] {color: #ff0000;}
     [data-goal] {color: #0000ff;}
+	[data-selected] {color: green;}
 </style>
 </head>
 <body id="map">
@@ -16,6 +17,7 @@
                 <a id="js_nav_button" class="nav__button" href="./map.html"></a>
             </nav>
             <!-- /.nav -->
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div id="shop_list" class="shop__list"></div>
             <!--
 			<div class="map__view"><img src="./map-level-02.png" alt=""></div>
@@ -113,18 +115,20 @@
 <script src="./common.js"></script>
 <script>
 $(function(){
+  
 	/* JSON */
 	$.getJSON('ayaladate.json' , function($jsonDate) {
 		  var $shopListElement = '',
 			  $startShop = '',
-			  $goalShop = '';
+			  $goalShop = '',
+			  $selectedShop = '';
 
 		  for(var $i in $jsonDate){
 			for(var $j in $jsonDate[$i].shopinfo){
 
 			  /* Start Shop */
 			  if($jsonDate[$i].shopinfo[$j].shopID.indexOf($startShopName) === 0){
-				  $startShop = ' data-start="start"' + $startShopName;
+				  $startShop = ' data-start="start"';
 			  }else{
 				  $startShop = '';
 			  }
@@ -135,7 +139,19 @@ $(function(){
 			  }else{
 				  $goalShop = '';
 			  }
-			  $shopListElement += '<div' + $startShop + $goalShop + '>' + $jsonDate[$i].shopinfo[$j].shopID + '（' + $startShop + $goalShop + '）</div>';
+			  
+			  /* Selected */
+			  if($jsonDate[$i].shopinfo[$j].shopID.indexOf($selectedShopID) === 0){
+				  $selectedShop = ' data-selected="selected"';
+			  }else{
+				  $selectedShop = '';
+			  }
+			  
+			  if($selectedShop != ''){
+				  $shopListElement += '<div' + $selectedShop +'>' + $jsonDate[$i].shopinfo[$j].name + '（' + $selectedShop + '）</div>';
+			  }else{
+				  $shopListElement += '<div' + $startShop + $goalShop +'>' + $jsonDate[$i].shopinfo[$j].name + '（' + $startShop + $goalShop + '）</div>';
+			  }
 		  }
 		}
 		$('#shop_list').append($shopListElement);

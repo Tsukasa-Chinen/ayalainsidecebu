@@ -75,20 +75,15 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			}
 
 		}
-		if(shopGoalID != "none"){
-			let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
-			let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
-			let script = scriptStart + scriptGoal
-			mapWebView.stringByEvaluatingJavaScript(from: script)
-		}
+			let start = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
+			let goal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
+			let scriptStartGoal = start + goal
+			mapWebView.stringByEvaluatingJavaScript(from: scriptStartGoal)
 
-		if(selectedID != "none"){
 			//print(selectedID)
 			//print(selectedFloor)
-			let scriptSelectedShopID = "var $startShopName = (function(){return \"\(selectedID)\";})();"
-			let script = scriptSelectedShopID
-			mapWebView.stringByEvaluatingJavaScript(from: script)
-		}
+			let scriptSelectedShop = "var $selectedShopID = (function(){return \"\(selectedID)\";})();"
+			mapWebView.stringByEvaluatingJavaScript(from: scriptSelectedShop)
 	}
 	/* END viewDidLoad */
 
