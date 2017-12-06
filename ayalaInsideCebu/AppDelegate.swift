@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 	/* Save:  CareData */
-	
 	func saveCoreData(entity: String, shopID: String){
 		// Core Dataに保存
 		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -48,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 		// レコード（行）の即時保存
 		do {
-		try letViewContext.save()
+			try letViewContext.save()
 		}
 		catch {
 	

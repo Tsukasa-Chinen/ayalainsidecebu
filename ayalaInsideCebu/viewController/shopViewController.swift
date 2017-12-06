@@ -38,14 +38,11 @@ class shopViewController: UIViewController, UIWebViewDelegate {
 			for i in 0 ..< (selectedComponents?.queryItems?.count)! {
 				let shopInfo = (selectedComponents?.queryItems?[i])! as URLQueryItem
 				
-				
 				if(shopInfo.name == "shop_id"){
 					selectID = shopInfo.value!
 				}else if(shopInfo.name == "shop_floor"){
 					selectFloor = shopInfo.value!
 				}
-				
-				
 			}
 
 			/* Save CoreData */

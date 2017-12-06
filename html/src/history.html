@@ -49,6 +49,15 @@
 <script src='./common.js'></script>
 <script>
 $(function(){
+	/* back to Map */
+	$(document).on('tap', '#back_btn', function(){
+		movePage($(this).data('page'));
+	});
+
+	/* Send to Map */
+	$(document).on('tap', '.js_shop_info', function(){
+		sendShopInfo($(this).data('shop-id'), $(this).data('shop-floor'));
+	});
 
 });
 </script>

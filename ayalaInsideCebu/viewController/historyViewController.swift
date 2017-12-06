@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 import CoreData
+import Foundation
 
 class historyViewController: UIViewController, UIWebViewDelegate {
 
@@ -29,6 +30,7 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		appDeligate.loadFile(webViewName:historyWebView, resource: "history", type: "html")
 		
 		var contentTitle:[NSDictionary] = []
+		
 		// AppDelegateを使う用意をしておく
 		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
 		
@@ -39,22 +41,33 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		let letQuery:NSFetchRequest<History> = History.fetchRequest()
 		
 		// データを一括取得
-		
 		// きちんと保存できてるか、1行ずつ表示（デバッグエリア）
 		do {
 			let fetchResults = try letViewContext.fetch(letQuery)
 			for result: AnyObject in fetchResults {
-				let letShopID: String? = result.value(forKey: "shopID") as? String
-				let letDate: Date? = result.value(forKey: "date") as? Date
-				
-				var dic = ["shopID": letShopID, "date": letDate] as! [String:Any]
-				
+				let letShopID: String = result.value(forKey: "shopID") as! String
+				let letDate: Date = result.value(forKey: "date") as! Date
+
+				let df = DateFormatter();
+				df.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "en_PH"))
+				df.dateStyle = .medium
+				df.timeStyle = .none
+				df.doesRelativeDateFormatting = true
+
+				var dic = ["shopID": letShopID, "date": df.string(from: letDate)] as! [String:Any]
 				contentTitle.append(dic as NSDictionary)
 			}
+			
+			// DictionaryをJSONデータに変換
+			let jsonData = try JSONSerialization.data(withJSONObject: contentTitle)
+
+			// JSONデータを文字列に変換
+			let jsonStr = String(bytes: jsonData, encoding: .utf8)!
+			print(jsonStr)
 		}
 		catch {
 		}
-		print(contentTitle)
+		//print(contentTitle)
 	}
 
 	/* CREATE: Get Data from JS Function */
