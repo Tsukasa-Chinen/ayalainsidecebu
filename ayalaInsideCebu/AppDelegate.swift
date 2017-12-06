@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    /* CREATE: HTML or JS Load Function */
+    /* CREATE: HTML or JS Load */
     func loadFile(webViewName:UIWebView!, resource: String, type: String){
         let filePath = Bundle.main.path(forResource: resource, ofType: type)
         if(type == "js"){
@@ -26,6 +26,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             webViewName.loadRequest(urlRequest)
         }
     }
+
+	/* Save:  CareData */
+	
+	func saveCoreData(entity: String, shopID: String){
+		// Core Dataに保存
+		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+	
+		// AppDeligateを使う用意（インスタンス化）
+		let letViewContext = letAppDeligate.persistentContainer.viewContext
+	
+		// エンティティを操作するためのオブジェクト作成
+		let letEntity = NSEntityDescription.entity(forEntityName: "\(entity)", in: letViewContext)
+	
+		// ToDoエンティティオブジェクト作成
+		let letNewRecord = NSManagedObject(entity: letEntity!, insertInto: letViewContext)
+	
+		// 値のセット
+		letNewRecord.setValue(shopID, forKey: "shopID") // shopID列に文字をセット
+		letNewRecord.setValue(Date(), forKey: "date") // Data列に現在日時をセット
+	
+		// レコード（行）の即時保存
+		do {
+		try letViewContext.save()
+		}
+		catch {
+	
+		}
+
+	}
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

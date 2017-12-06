@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-import Foundation
+import CoreData
 
 class mapViewController: UIViewController, UIWebViewDelegate {
 
@@ -75,18 +75,21 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			}
 
 		}
-			let start = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
-			let goal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
-			let scriptStartGoal = start + goal
-			mapWebView.stringByEvaluatingJavaScript(from: scriptStartGoal)
 
-			//print(selectedID)
-			//print(selectedFloor)
-			let scriptSelectedShop = "var $selectedShopID = (function(){return \"\(selectedID)\";})();"
-			mapWebView.stringByEvaluatingJavaScript(from: scriptSelectedShop)
+		let start = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
+		let goal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
+		let scriptStartGoal = start + goal
+		mapWebView.stringByEvaluatingJavaScript(from: scriptStartGoal)
+
+		//print(selectedID)
+		//print(selectedFloor)
+		let scriptSelectedShop = "var $selectedShopID = (function(){return \"\(selectedID)\";})();"
+		mapWebView.stringByEvaluatingJavaScript(from: scriptSelectedShop)
 	}
 	/* END viewDidLoad */
 
+	
+	
 	/* CREATE: Get Data from JS Function */
 	var selectedPageSegue:String = "none"
 	
@@ -124,7 +127,7 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 		}
 		return true
 	}
-	
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import CoreData
 
 class shopViewController: UIViewController, UIWebViewDelegate {
 
@@ -43,9 +44,16 @@ class shopViewController: UIViewController, UIWebViewDelegate {
 				}else if(shopInfo.name == "shop_floor"){
 					selectFloor = shopInfo.value!
 				}
+				
+				
 			}
+
+			/* Save CoreData */
+			appDeligate.saveCoreData (entity: "History", shopID: selectID)
+
 			/* Segure */
 			performSegue(withIdentifier: "segueShopToMap", sender: nil)
+			
 			return false
 		}
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import CoreData
 
 class historyViewController: UIViewController, UIWebViewDelegate {
 
@@ -26,7 +27,34 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		/* Load File */
 		appDeligate.loadFile(webViewName:historyWebView, resource: "functions", type: "js")
 		appDeligate.loadFile(webViewName:historyWebView, resource: "history", type: "html")
-
+		
+		var contentTitle:[NSDictionary] = []
+		// AppDelegateを使う用意をしておく
+		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+		
+		// エンティティを操作するためのオブジェクト作成
+		let letViewContext = letAppDeligate.persistentContainer.viewContext
+		
+		// どのエンティティからデータを取得してくるかを設定（Historyエンティティ）
+		let letQuery:NSFetchRequest<History> = History.fetchRequest()
+		
+		// データを一括取得
+		
+		// きちんと保存できてるか、1行ずつ表示（デバッグエリア）
+		do {
+			let fetchResults = try letViewContext.fetch(letQuery)
+			for result: AnyObject in fetchResults {
+				let letShopID: String? = result.value(forKey: "shopID") as? String
+				let letDate: Date? = result.value(forKey: "date") as? Date
+				
+				var dic = ["shopID": letShopID, "date": letDate] as! [String:Any]
+				
+				contentTitle.append(dic as NSDictionary)
+			}
+		}
+		catch {
+		}
+		print(contentTitle)
 	}
 
 	/* CREATE: Get Data from JS Function */
@@ -47,7 +75,7 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		return true
 	}
 
-	
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
