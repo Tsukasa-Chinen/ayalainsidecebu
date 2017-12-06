@@ -27,23 +27,36 @@ class shopViewController: UIViewController, UIWebViewDelegate {
 		appDeligate.loadFile(webViewName:shopWebView, resource: "functions", type: "js")
         appDeligate.loadFile(webViewName:shopWebView, resource: "shop", type: "html")
     }
-
-	/* CREATE: Get Data from JS Function */
+	
+	var selectID: String = "none"
+	var selectFloor: String = "none"
+	
 	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
 		if(request.url!.scheme == "scheme") {
-			let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
-			for i in 0 ..< (components?.queryItems?.count)! {
-				let page = (components?.queryItems?[i])! as URLQueryItem
+			let selectedComponents: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+			for i in 0 ..< (selectedComponents?.queryItems?.count)! {
+				let shopInfo = (selectedComponents?.queryItems?[i])! as URLQueryItem
 				
-				/* Get Page Type */
-				if(page.name == "page"){
-					/* Segure */
-					performSegue(withIdentifier: "segueShopToMap", sender: nil)
+				
+				if(shopInfo.name == "shop_id"){
+					selectID = shopInfo.value!
+				}else if(shopInfo.name == "shop_floor"){
+					selectFloor = shopInfo.value!
 				}
 			}
+			/* Segure */
+			performSegue(withIdentifier: "segueShopToMap", sender: nil)
 			return false
 		}
+
 		return true
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// mapViewController.getStartに選択された番号を渡す
+		let map:mapViewController = segue.destination as! mapViewController
+		map.selectedID = selectID
+		map.selectedFloor = selectFloor
 	}
 
     override func didReceiveMemoryWarning() {

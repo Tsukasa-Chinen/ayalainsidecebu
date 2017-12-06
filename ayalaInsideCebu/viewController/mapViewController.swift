@@ -17,10 +17,14 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mapWebView: UIWebView!
     
-    /* フォームからの値を変数に代入するため予め変数を定義しておく */
+    /* whereページのフォームからの値を変数に代入するため予め変数を定義しておく */
     var getStart:String = "none"
     var getGoal:String  = "none"
 
+	/* 他のページのフォームからの値を変数に代入するため予め変数を定義しておく */
+	var selectedID:String = "none"
+	var selectedFloor:String  = "none"
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -55,28 +59,40 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 				
 				let getShopName = shopInfo["name"] as! String
 				let shopName = getShopName.lowercased().replacingOccurrences(of: " ", with: "-")
-				let shopID = shopInfo["id"] as! String
+				let shopID = shopInfo["shopID"] as! String
 
+				// whereからの処理
 				// Start
-				if shopName == getStart {
+				if (shopName == getStart) {
 					shopStartID = shopID
+					//print(shopStartID)
 				}
 				// Goal
-				if shopName == getGoal {
+				if (shopName == getGoal) {
 					shopGoalID = shopID
+					//print(shopGoalID)
 				}
-				// print(shopName)
-				// print(shopID)
 			}
+
+		}
+		if(shopGoalID != "none"){
 			let scriptStart = "var $startShopName = (function(){return \"\(shopStartID)\";})();"
 			let scriptGoal  = "var $goalShopName = (function(){return \"\(shopGoalID)\";})();"
 			let script = scriptStart + scriptGoal
 			mapWebView.stringByEvaluatingJavaScript(from: script)
-		}	
+		}
+
+		if(selectedID != "none"){
+			//print(selectedID)
+			//print(selectedFloor)
+			let scriptSelectedShopID = "var $startShopName = (function(){return \"\(selectedID)\";})();"
+			let script = scriptSelectedShopID
+			mapWebView.stringByEvaluatingJavaScript(from: script)
+		}
 	}
+	/* END viewDidLoad */
 
 	/* CREATE: Get Data from JS Function */
-	var selectedPage:String = "none"
 	var selectedPageSegue:String = "none"
 	
 	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
@@ -87,38 +103,33 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 				
 				/* Get Page Type */
 				if(page.name == "page"){
-					selectedPage = page.value!
-				}
-				// print(selectedPage)
-
-				/* Set Segure */
-				switch selectedPage {
-					case "history":
-						selectedPageSegue = "segueMapToHistory"
-					case "search":
-						selectedPageSegue = "segueMapToSearch" // OK
-					case "shop":
-						selectedPageSegue = "segueMapToShop" // OK
-					case "where":
-						selectedPageSegue = "segueMapToWhere" // OK
-					default:
-						selectedPageSegue = ""
+					// print(page.value!)
+					/* Set Segure */
+					switch page.value! {
+						case "history":
+							selectedPageSegue = "segueMapToHistory"
+						case "search":
+							selectedPageSegue = "segueMapToSearch"
+						case "shop":
+							selectedPageSegue = "segueMapToShop"
+						case "where":
+							selectedPageSegue = "segueMapToWhere"
+						default:
+							selectedPageSegue = ""
+					}
+					// print(selectedPageSegue)
+					
+					/* Segure */
+					if(selectedPageSegue != ""){
+						performSegue(withIdentifier: selectedPageSegue, sender: nil)
+					}
 				}
 			}
-			// print(selectedPageSegue)
-
-			/* Segure */
-			performSegue(withIdentifier: selectedPageSegue, sender: nil)
-
 			return false
 		}
 		return true
 	}
 	
-	/* OVERRIDE: prepare */
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-	}
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

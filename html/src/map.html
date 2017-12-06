@@ -29,7 +29,7 @@
 		<div class="modal__contents">
 			<ul class="modal__menu">
 				<li class="shop">
-					<span class="btn" data-scheme="shop">
+					<span class="js_btn btn" data-scheme="shop">
 						<span class="modal__menu_image">
 							<svg class="svg" version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
 							<g>
@@ -48,7 +48,7 @@
 					</span>
 				</li>
 				<li class="history">
-					<span class="btn" data-scheme="history">
+					<span class="js_btn btn" data-scheme="history">
 						<span class="modal__menu_image">
 							<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
@@ -77,7 +77,7 @@
 					</span>
 				</li>
 				<li class="search">
-					<span class="btn" data-scheme="search">
+					<span class="js_btn btn" data-scheme="search">
 						<span class="modal__menu_image">
 							<svg class="svg" version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 								 y="0px" viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
@@ -90,7 +90,7 @@
 					</span>
 				</li>
 				<li class="where">
-					<span class="btn" data-scheme="where">
+					<span class="js_btn btn" data-scheme="where">
 						<span class="modal__menu_image">
 							<svg class="svg" version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 								 y="0px" viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
@@ -109,6 +109,7 @@
 	</div>
 	<!-- /.modal -->
 <script src="./jquery-2.1.4.min.js"></script>
+<script src="./jquery.mobile.custom.min.js"></script>
 <script src="./common.js"></script>
 <script>
 $(function(){
@@ -122,25 +123,25 @@ $(function(){
 			for(var $j in $jsonDate[$i].shopinfo){
 
 			  /* Start Shop */
-			  if($jsonDate[$i].shopinfo[$j].id.indexOf($startShopName) === 0){
+			  if($jsonDate[$i].shopinfo[$j].shopID.indexOf($startShopName) === 0){
 				  $startShop = ' data-start="start"' + $startShopName;
 			  }else{
 				  $startShop = '';
 			  }
 
 			  /* Goal Shop */
-			  if($jsonDate[$i].shopinfo[$j].id.indexOf($goalShopName) === 0){
+			  if($jsonDate[$i].shopinfo[$j].shopID.indexOf($goalShopName) === 0){
 				  $goalShop = ' data-goal="goal"';
 			  }else{
 				  $goalShop = '';
 			  }
-			  $shopListElement += '<div' + $startShop + $goalShop + '>' + $jsonDate[$i].shopinfo[$j].id + '（' + $startShop + $goalShop + '）</div>';
+			  $shopListElement += '<div' + $startShop + $goalShop + '>' + $jsonDate[$i].shopinfo[$j].shopID + '（' + $startShop + $goalShop + '）</div>';
 		  }
 		}
 		$('#shop_list').append($shopListElement);
 	});
 	
-	$('#js_modal .btn').on('click', function(){
+	$(document).on('tap', '.js_btn', function(){
 	    movePage($(this).data('scheme'));	
 	});
 });

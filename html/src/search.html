@@ -28,6 +28,7 @@
 	</div>
 	<!-- /.wrapper -->
 <script src="./jquery-2.1.4.min.js"></script>
+<script src="./jquery.mobile.custom.min.js"></script>
 <script src='./common.js'></script>
 <script>
 $(function(){
@@ -38,7 +39,7 @@ $(function(){
 
 		for(var $i in $jsonDate){
 			for(var $j in $jsonDate[$i].shopinfo){
-				$shopListElement += '<li data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '"><a href="#">' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></a></li>';
+				$shopListElement += '<li data-shop-name="' + $jsonDate[$i].shopinfo[$j].name.replace(/\s/g, '-').toLowerCase() + '"><span class="btn_shop_link" data-scheme="' + $jsonDate[$i].shopinfo[$j].shopID + '">' + $jsonDate[$i].shopinfo[$j].name + '<img class="arrow" src="./arrow_r.svg"></span></li>';
 			}
 		}
 		$('#shop_list').append($shopListElement);
@@ -59,10 +60,6 @@ $(function(){
 			});
 		}
     });
-
-	$('#back_btn').on('click', function(){
-		movePage($(this).data('scheme'));
-	});
 
 });
 </script>

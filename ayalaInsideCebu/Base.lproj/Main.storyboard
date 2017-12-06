@@ -101,12 +101,12 @@
                     <connections>
                         <outlet property="shopWebView" destination="Abb-aK-Yjf" id="Fh8-uX-dm2"/>
                         <segue destination="0rS-mL-W05" kind="show" identifier="segueSearch" id="sC3-gz-4A1"/>
-                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueShopToMap" action="showDetailViewController:sender:" id="1pX-XI-Mxa"/>
+                        <segue destination="uDv-Js-1r4" kind="showDetail" identifier="segueShopToMap" id="rDO-5w-R3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgX-Fg-HA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2975" y="311"/>
+            <point key="canvasLocation" x="-2625" y="311"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="ObE-EN-7Bs">
@@ -132,13 +132,11 @@
                     </view>
                     <connections>
                         <outlet property="searchWebView" destination="NKq-Qs-1Ss" id="WOg-tw-i0n"/>
-                        <segue destination="UIc-HG-d8n" kind="show" identifier="segueHistory" id="t6G-S2-Y2w"/>
-                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueSearchToMap" id="tZx-N0-oas"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPe-1g-c7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="311"/>
+            <point key="canvasLocation" x="-412" y="311"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="0iY-CW-JQG">
@@ -164,7 +162,6 @@
                     </view>
                     <connections>
                         <outlet property="historyWebView" destination="iNa-ew-zTS" id="pL5-NV-VVr"/>
-                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueHistoryToMap" id="deY-Ny-XY5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYj-Ic-Shl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,10 +190,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3GH-pd-0VN"/>
-        <segue reference="cM3-XM-chE"/>
-        <segue reference="tN5-35-uQb"/>
-        <segue reference="1pX-XI-Mxa"/>
-        <segue reference="czj-WH-eVn"/>
+        <segue reference="sC3-gz-4A1"/>
+        <segue reference="rDO-5w-R3P"/>
+        <segue reference="Deo-iH-7Ss"/>
     </inferredMetricsTieBreakers>
 </document>

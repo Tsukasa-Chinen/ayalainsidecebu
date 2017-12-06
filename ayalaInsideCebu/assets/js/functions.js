@@ -1,14 +1,14 @@
 /* 検索フォーム（where） */
 function sendDate($startVal, $goalVal) {
-    window.location =　'scheme://saveFunc?start=' + $startVal + '&goal=' + $goalVal;
+    window.location =　'scheme://func?start=' + $startVal + '&goal=' + $goalVal;
 }
 
 /* グロナビ */
 function movePage($pageType) {
-	window.location =　'scheme://saveFunc?page=' + $pageType;
+	window.location =　'scheme://func?page=' + $pageType;
 }
 
-/* ショップID */
-function getShopID($id) {
-	window.location =　'scheme://saveFunc?id=' + $id;
+/* ショップID, フロア */
+function sendShopInfo($id, $floor) {
+	window.location =　'scheme://func?shop_id=' + $id + '&shop_floor=' + $floor;
 }

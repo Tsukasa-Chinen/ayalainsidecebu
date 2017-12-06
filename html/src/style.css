@@ -312,7 +312,7 @@ a:focus {
 .search__list li {
 	display: none;
 }
-.search__list a {
+.search__list span {
 	display: block;
 	position: relative;
 	padding: 1rem 0 1rem .2rem;
