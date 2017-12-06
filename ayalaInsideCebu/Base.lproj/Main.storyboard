@@ -132,6 +132,7 @@
                     </view>
                     <connections>
                         <outlet property="searchWebView" destination="NKq-Qs-1Ss" id="WOg-tw-i0n"/>
+                        <segue destination="uDv-Js-1r4" kind="show" identifier="segueSearchToMap" id="zVV-Hn-nPg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPe-1g-c7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +192,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sC3-gz-4A1"/>
-        <segue reference="rDO-5w-R3P"/>
+        <segue reference="zVV-Hn-nPg"/>
         <segue reference="Deo-iH-7Ss"/>
     </inferredMetricsTieBreakers>
 </document>
