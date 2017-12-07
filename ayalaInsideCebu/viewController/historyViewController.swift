@@ -61,7 +61,6 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 			let jsonData = try JSONSerialization.data(withJSONObject: coreDataDic)
 			// JSONデータを文字列に変換
 			let jsonStr = String(bytes: jsonData, encoding: .utf8)!
-			print(jsonStr)
 			
 			let scriptCoreDataJSON = "var $scriptCoreDataJSON = \(jsonStr);"
 			historyWebView.stringByEvaluatingJavaScript(from: scriptCoreDataJSON)
@@ -69,20 +68,38 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		catch {
 		}
 	}
+	
+	var selectID: String    = "none"
+	var selectName: String  = "none"
+	var selectFloor: String = "none"
 
-	/* CREATE: Get Data from JS Function */
 	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
 		if(request.url!.scheme == "scheme") {
-			let components: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
-			for i in 0 ..< (components?.queryItems?.count)! {
-				let page = (components?.queryItems?[i])! as URLQueryItem
+			let selectedComponents: NSURLComponents? = NSURLComponents(string: request.url!.absoluteString)
+			for i in 0 ..< (selectedComponents?.queryItems?.count)! {
+				let shopInfo = (selectedComponents?.queryItems?[i])! as URLQueryItem
 				
-				/* Segure */
-				performSegue(withIdentifier: "segueHistoryToMap", sender: nil)
+				if(shopInfo.name == "shop_id"){
+					selectID = shopInfo.value!
+				}else if(shopInfo.name == "shop_name"){
+					selectName = shopInfo.value!
+				}else if(shopInfo.name == "shop_floor"){
+					selectFloor = shopInfo.value!
+				}
 			}
+			
+			/* Segure */
+			performSegue(withIdentifier: "segueHistoryToMap", sender: nil)
 			return false
 		}
 		return true
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// mapViewController.getStartに選択された番号を渡す
+		let map:mapViewController = segue.destination as! mapViewController
+		map.selectedID = selectID
+		map.selectedFloor = selectFloor
 	}
 
 

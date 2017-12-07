@@ -56,7 +56,6 @@ class shopViewController: UIViewController, UIWebViewDelegate {
 			
 			return false
 		}
-
 		return true
 	}
 
