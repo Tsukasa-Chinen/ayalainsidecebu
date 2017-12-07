@@ -31,7 +31,7 @@ $(function(){
 		$historyDate = '';
 		
 	var $todayCount = 0,
-		$yestadayCount = 0,
+		$yesterdayCount = 0,
 		$2daysagoCount = 0,
 		$3daysagoCount = 0;
 		
@@ -39,9 +39,9 @@ $(function(){
 		if($scriptCoreDataJSON[$i].date == 'Today'){
 			$todayCount++;
 			$historyDate = ' today' + $todayCount;
-		}else if($scriptCoreDataJSON[$i].date == 'Yestaday'){
-			$yestadayCount++;
-			$historyDate = ' yestaday' + $yestadayCount;
+		}else if($scriptCoreDataJSON[$i].date == 'Yesterday'){
+			$yesterdayCount++;
+			$historyDate = ' yesterday' + $yestadayCount;
 		}
 		
 		$shopListElement += '<dt class="history__list_label' + $historyDate + '"><span>' + $scriptCoreDataJSON[$i].date + '</span></dt>';

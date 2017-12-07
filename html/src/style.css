@@ -234,20 +234,18 @@ a:focus {
 	background-size: 65% auto;
 	color: rgba(255, 255, 255, .85);
 }
-.shop__list dt {
+.shop__list_category {
 	font-size: 128%;
 	border-bottom: 1px solid rgba(255, 255, 255, .5);
 	padding: 1.8rem 0 .4rem;
 	letter-spacing: .1rem;
 	margin-bottom: .8rem;
 }
-.shop__list dd {
-	display: inline-block;
-}
 .shop__list_name {
 	display: inline-block;
 	letter-spacing: .1rem;
-	padding: 0 .4rem .6rem 0;
+	padding: 0 .6rem .6rem 0;
+	text-decoration: underline;
 }
 
 /* History

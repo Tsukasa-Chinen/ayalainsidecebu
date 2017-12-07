@@ -2,15 +2,16 @@
     {
         "category": "AMUSEMENT AND ENTERTAINMENT",
         "shopinfo": [
-             { "name": "Red Box", "floor": "lv01", "shopID": "hoge"},
-			 { "name": "Hoge", "floor": "lv01", "shopID": "am02"}
+             {"name": "Red Box", "floor": "lv01", "shopID": "hoge"},
+			 {"name": "Timezone", "floor": "lv02", "shopID": "am02"}
         ]
     },
     {
         "category": "APPAREL",
         "shopinfo": [
-            { "name": "Arrow", "floor": "lv01", "shopID": "app01"},
-			{ "name": "Brrow", "floor": "lv01", "shopID": "app02"}
+			{"name": "158 Designers Blvd", "floor": "lv01", "shopID": "app01"},
+			{"name": "Adina", "floor": "lv02", "shopID": "app02"}
         ]
     }
 ]
+

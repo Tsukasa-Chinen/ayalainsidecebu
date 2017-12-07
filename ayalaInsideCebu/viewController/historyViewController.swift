@@ -31,14 +31,9 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 		
 		var coreDataDic:[NSDictionary] = []
 		
-		// AppDelegateを使う用意をしておく
-		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-		
-		// エンティティを操作するためのオブジェクト作成
-		let letViewContext = letAppDeligate.persistentContainer.viewContext
-		
-		// どのエンティティからデータを取得してくるかを設定（Historyエンティティ）
-		let letQuery:NSFetchRequest<History> = History.fetchRequest()
+		let letAppDeligate: AppDelegate = UIApplication.shared.delegate as! AppDelegate // AppDelegateを使う用意をしておく
+		let letViewContext = letAppDeligate.persistentContainer.viewContext // エンティティを操作するためのオブジェクト作成
+		let letQuery:NSFetchRequest<History> = History.fetchRequest() // どのエンティティからデータを取得してくるかを設定（Historyエンティティ）
 		
 		// きちんと保存できてるか、1行ずつ表示（デバッグエリア）
 		do {
@@ -48,7 +43,8 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 				let letShopName: String = result.value(forKey: "shopName") as! String
 				let letShopFloor: String = result.value(forKey: "shopFloor") as! String
 				let letDate: Date = result.value(forKey: "date") as! Date
-
+				
+				// Dateformat(today, yesterday)
 				let df = DateFormatter();
 				df.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "en_PH"))
 				df.dateStyle = .medium
