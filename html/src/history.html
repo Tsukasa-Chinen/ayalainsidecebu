@@ -25,16 +25,36 @@
 <script src='./common.js'></script>
 <script>
 $(function(){
-	for(var i in $scriptCoreDataJSON){
-		$("#history_list").append('<dd class="js_shop_info" data-shop-id="' + $scriptCoreDataJSON[i].shopID + '" data-shop-name="' + $scriptCoreDataJSON[i].shopName + '" data-shop-floor="' + $scriptCoreDataJSON[i].shopFloor + '"><span>' + $scriptCoreDataJSON[i].shopName + '<img class="arrow" src="./arrow_r.svg"></span></dd>');
+	
+	/* JSON */
+	var $shopListElement = '',
+		$historyDate = '';
+		
+	var $todayCount = 0,
+		$yestadayCount = 0,
+		$2daysagoCount = 0,
+		$3daysagoCount = 0;
+		
+	for(var $i in $scriptCoreDataJSON){			
+		if($scriptCoreDataJSON[$i].date == 'Today'){
+			$todayCount++;
+			$historyDate = ' today' + $todayCount;
+		}else if($scriptCoreDataJSON[$i].date == 'Yestaday'){
+			$yestadayCount++;
+			$historyDate = ' yestaday' + $yestadayCount;
+		}
+		
+		$shopListElement += '<dt class="history__list_label' + $historyDate + '"><span>' + $scriptCoreDataJSON[$i].date + '</span></dt>';
+		$shopListElement += '<dd class="js_shop_info history__list_shop" data-shop-id="' + $scriptCoreDataJSON[$i].shopID + '" data-shop-floor="' + $scriptCoreDataJSON[$i].shopFloor + '">' + $scriptCoreDataJSON[$i].shopName + '</dd>';
 	}
- 
+	$('#history_list').append($shopListElement);		
+
 	/* back to Map */
 	$(document).on('tap', '#back_btn', function(){
 		movePage($(this).data('page'));
 	});
 
-  /* Send to Map */
+	/* Send to Map */
 	$(document).on('tap', '.js_shop_info', function(){
 		sendShopInfo($(this).data('shop-id'), $(this).data('shop-name'), $(this).data('shop-floor'));
 	});

@@ -1,15 +1,6 @@
 [
-	{
-    	"category": "AMUSEMENT AND ENTERTAINMENT",
-		"shopinfo": [
-        	{ "name": "Red Box", "floor": "lv01", "id": "am01"}
-
-		]
-	},
-	{
-    	"category": "APPAREL",
-		"shopinfo": [
-        	{ "name": "Arrow", "floor": "lv01", "id": "am01"}
-		]
-	}
+	{"shopName":"Arrow","shopFloor":"lv01","date":"Today","shopID":"app02"},
+	{"shopName":"Brrow","shopFloor":"lv01","date":"Today","shopID":"app02"},
+	{"shopName":"Mogwai","shopFloor":"lv01","date":"Yestaday","shopID":"am02"},
+	{"shopName":"Hoge","shopFloor":"lv01","date":"Yestaday","shopID":"am02"}
 ]

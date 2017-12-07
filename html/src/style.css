@@ -244,7 +244,7 @@ a:focus {
 .shop__list dd {
 	display: inline-block;
 }
-.shop__list a {
+.shop__list_name {
 	display: inline-block;
 	letter-spacing: .1rem;
 	padding: 0 .4rem .6rem 0;
@@ -259,18 +259,33 @@ a:focus {
 }
 .history__list {
 	font-size: 1.4rem;
-	padding-top: 1.8rem;
 }
-.history__list span {
+.history__list_label {
+	display: none;
+	margin: 2.8rem 0 .6rem;
+}
+.history__list .today1,
+.history__list .yestaday1 {
+	display: block;
+}
+.history__list_label span {
+	display: inline;
+	font-size: 1rem;
+	border: 1px solid rgba(255, 255, 255, .25);
+	border-radius: .28rem;
+	color: #fff;
+	padding: .4rem .4rem .6rem;
+	background: rgba(255, 255, 255, .25);
+	letter-spacing: .1rem;
+}
+.history__list_shop {
 	display: block;
 	position: relative;
 	padding: 1rem 0 1rem .2rem;
 	color: rgba(255, 255, 255, .7);
 	text-decoration: none;
-	border-bottom: 1px solid rgba(255, 255, 255, .5);
-}
-.history__list dd:first-of-type a {
-	border-top: 1px solid rgba(255, 255, 255, .5);	
+	border-bottom: 1px solid rgba(255, 255, 255, .45);
+	margin-left: .2rem;
 }
 .history__list .arrow {
 	display: inline-block;

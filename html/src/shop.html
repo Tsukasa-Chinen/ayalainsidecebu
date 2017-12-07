@@ -31,7 +31,7 @@ $(function(){
 		for(var $i in $jsonDate){
 			$shopListElement += '<dl><dt>' + $jsonDate[$i].category + '</dt>';
 			for(var $j in $jsonDate[$i].shopinfo){
-				$shopListElement += '<dd class="js_shop_info" data-shop-id="' + $jsonDate[$i].shopinfo[$j].shopID + '" data-shop-floor="' + $jsonDate[$i].shopinfo[$j].floor + '">' + $jsonDate[$i].shopinfo[$j].name + '</dd>';
+				$shopListElement += '<dd class="js_shop_info" data-shop-id="' + $jsonDate[$i].shopinfo[$j].shopID + '" data-shop-floor="' + $jsonDate[$i].shopinfo[$j].floor + '"><span class="shop__list_name">' + $jsonDate[$i].shopinfo[$j].name + '</span></dd>';
 			}
 			$shopListElement += '</dl>';
 		}

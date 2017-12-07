@@ -53,6 +53,24 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 				df.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "en_PH"))
 				df.dateStyle = .medium
 				
+				df.doesRelativeDateFormatting = true
+
+				/* TODO:Copyright (C) Okayu 20171207
+				let now = Date()
+				let day:Double = 60*60*24
+				print("いつ？？")
+				print(df.string(from: now))
+				print(df.string(from: now-day))
+				print(df.string(from: now-day*2))
+				print(df.string(from: now-day*3))
+				let wawawa = letDate - day*2
+				var saveDate = df.string(from: wawawa)
+				if ( (now - day*2) < wawawa) && ( wawawa <= (now - day*3) ) {
+					saveDate = "2days ago"
+				}
+				print(saveDate)
+				*/
+				
 				var dic = ["shopID": letShopID, "shopName": letShopName, "shopFloor": letShopFloor, "date": df.string(from: letDate)] as! [String:Any]
 				coreDataDic.append(dic as NSDictionary)
 			}
@@ -61,6 +79,8 @@ class historyViewController: UIViewController, UIWebViewDelegate {
 			let jsonData = try JSONSerialization.data(withJSONObject: coreDataDic)
 			// JSONデータを文字列に変換
 			let jsonStr = String(bytes: jsonData, encoding: .utf8)!
+			//print(jsonStr)
+			
 			
 			let scriptCoreDataJSON = "var $scriptCoreDataJSON = \(jsonStr);"
 			historyWebView.stringByEvaluatingJavaScript(from: scriptCoreDataJSON)
