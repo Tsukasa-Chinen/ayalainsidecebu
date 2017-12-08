@@ -81,6 +81,40 @@
 			{"name": "What A Girl Wants", "floor": "lv01", "shopID": "app71"},
 			{"name": "XOXO", "floor": "lv02", "shopID": "app72"}
 		 ]
-    }
-]
+    },
+	{
+		"category": "BOOKSTORES / OFFICE SUPPLIES",
+		"shopinfo": [
+			{"name": "Fully Booked", "floor": "lv02", "shopID": "bo01"},
+			{"name": "National Bookstore", "floor": "lv02", "shopID": "bo02"}
+		]
+	},
+	{
+		"category": "CAKE / BAKESHOP / DESSERTS",
+		"shopinfo": [
+			{"name": "Aji Ichiban", "floor": "lv02", "shopID": "ca01"},
+			{"name": "Bo’s Coffee", "floor": "lv02", "shopID": "ca02"},
+			{"name": "Bos Coffee", "floor": "lv02", "shopID": "ca03"},
+			{"name": "Breadtalk", "floor": "lv02", "shopID": "ca04"},
+			{"name": "Dunkin Donuts", "floor": "lv03", "shopID": "ca05"},
+			{"name": "Figaro", "floor": "lv02", "shopID": "ca06"},
+			{"name": "Fountainhead", "floor": "lv03", "shopID": "ca07"},
+			{"name": "Fruits in Ice Cream", "floor": "lv03", "shopID": "ca08"},
+			{"name": "Gelatissimo", "floor": "lv01", "shopID": "ca09"},
+			{"name": "Goldilocks", "floor": "lv02", "shopID": "ca10"},
+			{"name": "Krispy Kreme", "floor": "lv02", "shopID": "ca11"},
+			{"name": "Maitre Chocolatier", "floor": "lv01", "shopID": "ca12"},
+			{"name": "Mall Cafeteria", "floor": "lv04", "shopID": "ca13"},
+			{"name": "Red Mango", "floor": "lv04", "shopID": "ca14"},
+			{"name": "Red Ribbon", "floor": "lv01", "shopID": "ca15"},
+			{"name": "Seattle’s Best Coffee", "floor": "lv01", "shopID": "ca16"},
+			{"name": "Starbucks", "floor": "lv01", "shopID": "ca17"},
+			{"name": "Tablea", "floor": "lv02", "shopID": "ca18"},
+			{"name": "The Coffee Bean and Tea Leaf", "floor": "lv03", "shopID": "ca19"},
+			{"name": "UCC Cafe Terrace", "floor": "lv01", "shopID": "ca20"},
+			{"name": "Vanille Patisserie", "floor": "lv01", "shopID": "ca21"}
+		 ]
+	}
+
+ ]
 
