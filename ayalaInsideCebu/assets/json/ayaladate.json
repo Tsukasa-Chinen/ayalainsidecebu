@@ -165,6 +165,39 @@
 			{"name": "The Sun Shop", "floor": "lv03", "shopID": "comp22"},
 			{"name": "Thinking Tools @ Mall", "floor": "lv03", "shopID": "comp23"}
 		]
+	},
+	{
+		"category": "DEPARTMENT STORES",
+		"shopinfo": [
+			{"name": "Metro Gaisano", "floor": "lv00", "shopID": "depart01"},
+			{"name": "Rustans", "floor": "lv01", "shopID": "depart02"}
+		]
+	},
+	{
+		"category": "DRUGSTORE",
+		"shopinfo": [
+			{"name": "Mercury Drug", "floor": "lv02", "shopID": "drug01"},
+			{"name": "Rose Pharmacy", "floor": "lv02", "shopID": "drug02"},
+			{"name": "Watsons", "floor": "lv02", "shopID": "drug03"}
+		]
+	},
+	{
+		"category": "FASTFOOD",
+		"shopinfo": [
+			{"name": "Burger King", "floor": "lv03", "shopID": "fast01"},
+			{"name": "Chowking", "floor": "lv03", "shopID": "fast02"},
+			{"name": "Greenwich", "floor": "lv03", "shopID": "fast03"},
+			{"name": "Ice Castle", "floor": "lv03", "shopID": "fast04"},
+			{"name": "Jollibee", "floor": "lv03", "shopID": "fast05"},
+			{"name": "Kenny Rogers", "floor": "lv03", "shopID": "fast06"},
+			{"name": "KFC", "floor": "lv03", "shopID": "fast07"},
+			{"name": "McDonalds", "floor": "lv03", "shopID": "fast08"},
+			{"name": "Monster Franks", "floor": "lv04", "shopID": "fast09"},
+			{"name": "My Joy", "floor": "lv03", "shopID": "fast10"},
+			{"name": "Orange Brutus", "floor": "lv03", "shopID": "fast11"},
+			{"name": "Sbarro", "floor": "lv02", "shopID": "fast12"},
+			{"name": "Taters", "floor": "lv04", "shopID": "fast13"}
+		]
 	}
 
  
