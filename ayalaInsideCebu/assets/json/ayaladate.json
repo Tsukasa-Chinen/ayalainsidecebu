@@ -198,6 +198,48 @@
 			{"name": "Sbarro", "floor": "lv02", "shopID": "fast12"},
 			{"name": "Taters", "floor": "lv04", "shopID": "fast13"}
 		]
+	},
+	{
+		"category": "FOOD STALLS/CARTS",
+		"shopinfo": [
+			{"name": "Auntie Annes Pretzels", "floor": "lv03", "shopID": "foodstalls01"}
+		]
+	},
+	{
+		"category": "HARDWARE",
+		"shopinfo": [
+			{"name": "True Value", "floor": "lv01", "shopID": "hard01"}
+		]
+	},
+	{
+		"category": "HEALTH, BEAUTY, WELLNESS",
+		"shopinfo": [
+			{"name": "Beauty Bar", "floor": "lv01", "shopID": "helth01"},
+			{"name": "Belo Medical", "floor": "lv01", "shopID": "helth02"},
+			{"name": "Chiropractic Clinic", "floor": "bm02", "shopID": "helth03"},
+			{"name": "Dermcare Luxe", "floor": "bm01", "shopID": "helth04"},
+			{"name": "Dermsite", "floor": "bm02", "shopID": "helth05"},
+			{"name": "Etude House", "floor": "lv01", "shopID": "helth06"},
+			{"name": "Fitness & Athletics", "floor": "lv03", "shopID": "helth07"},
+			{"name": "Fitness First", "floor": "lv04", "shopID": "helth08"},
+			{"name": "GNC", "floor": "lv01", "shopID": "helth09"},
+			{"name": "Health Express5", "floor": "lv01", "shopID": "helth10"},
+			{"name": "Healthy Options", "floor": "lv01", "shopID": "helth11"},
+			{"name": "Ruiz Derma & Spa", "floor": "bm02", "shopID": "helth12"},
+			{"name": "Salon De Rose", "floor": "lv03", "shopID": "helth13"},
+			{"name": "Shiseido", "floor": "lv01", "shopID": "helth14"},
+			{"name": "Skin Science Centre", "floor": "bm02", "shopID": "helth15"},
+			{"name": "Skinfood", "floor": "lv02", "shopID": "helth16"},
+			{"name": "Skintech", "floor": "bm01", "shopID": "helth17"},
+			{"name": "Skintech", "floor": "lv01", "shopID": "helth18"},
+			{"name": "The Body Shop", "floor": "lv01", "shopID": "helth19"},
+			{"name": "The Face Shop", "floor": "lv01", "shopID": "helth20"},
+			{"name": "The Spa at Cebu", "floor": "lv01", "shopID": "helth21"},
+			{"name": "VMV Hypoallergenics", "floor": "lv01", "shopID": "helth22"},
+			{"name": "Watsons", "floor": "lv02", "shopID": "helth23"},
+			{"name": "Yves Rocher", "floor": "lv01", "shopID": "helth24"},
+			{"name": "Zen Zest", "floor": "lv02", "shopID": "helth25"}
+		]
 	}
 
  
