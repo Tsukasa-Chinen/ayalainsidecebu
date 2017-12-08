@@ -121,7 +121,24 @@
 			{"name": "Shawarma", "floor": "lv03", "shopID": "carts01"},
 			{"name": "Thirsty", "floor": "lv02", "shopID": "carts02"}
 		]
+	},
+	{
+		"category": "CHILDREN’S SHOPS",
+		"shopinfo": [
+			{"name": "Eyes Candy", "floor": "lv03", "shopID": "child01"},
+			{"name": "Guess Kids", "floor": "lv02", "shopID": "child02"},
+			{"name": "Hannahs", "floor": "lv03", "shopID": "child03"},
+			{"name": "Wagas Express Balloons", "floor": "lv00", "shopID": "child04"},
+			{"name": "Kaboosh", "floor": "lv03", "shopID": "child05"},
+			{"name": "My Playroom", "floor": "lv03", "shopID": "child06"},
+			{"name": "OshKosh BGosh", "floor": "lv03", "shopID": "child07"},
+			{"name": "Play 2 Learn", "floor": "lv03", "shopID": "child08"},
+			{"name": "Tamiya", "floor": "lv03", "shopID": "child09"},
+			{"name": "The Yellow Hat", "floor": "lv03", "shopID": "child10"},
+			{"name": "Toys @ Work", "floor": "lv03", "shopID": "child11"}
+		]
 	}
 
+ 
  ]
 
