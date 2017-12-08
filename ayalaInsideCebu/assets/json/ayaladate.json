@@ -137,6 +137,34 @@
 			{"name": "The Yellow Hat", "floor": "lv03", "shopID": "child10"},
 			{"name": "Toys @ Work", "floor": "lv03", "shopID": "child11"}
 		]
+	},
+	{
+		"category": "COMPUTERS / ELECTRONICS / TELECOM",
+		"shopinfo": [
+			{"name": "Audionet", "floor": "lv03", "shopID": "comp01"},
+			{"name": "AV Surfer", "floor": "lv03", "shopID": "comp02"},
+			{"name": "Avant", "floor": "lv03", "shopID": "comp03"},
+			{"name": "Blims / Automatic Center", "floor": "lv03", "shopID": "comp04"},
+			{"name": "Cellpod", "floor": "lv03", "shopID": "comp05"},
+			{"name": "Datablitz", "floor": "lv03", "shopID": "comp06"},
+			{"name": "Digibabe", "floor": "lv03", "shopID": "comp07"},
+			{"name": "Electroworld", "floor": "lv03", "shopID": "comp08"},
+			{"name": "Globe Flagship Store", "floor": "lv02", "shopID": "comp09"},
+			{"name": "HP Solution", "floor": "lv03", "shopID": "comp10"},
+			{"name": "I Store", "floor": "lv03", "shopID": "comp11"},
+			{"name": "Junrex", "floor": "lv03", "shopID": "comp12"},
+			{"name": "Mobile 1", "floor": "lv01", "shopID": "comp13"},
+			{"name": "Netopia", "floor": "lv04", "shopID": "comp14"},
+			{"name": "Nokia Care", "floor": "lv03", "shopID": "comp15"},
+			{"name": "Nokia Store", "floor": "lv04", "shopID": "comp16"},
+			{"name": "Sony Centre", "floor": "lv03", "shopID": "comp17"},
+			{"name": "Sony Ericsson", "floor": "lv01", "shopID": "comp18"},
+			{"name": "Sony Xperia", "floor": "lv01", "shopID": "comp19"},
+			{"name": "Starmobile", "floor": "lv01", "shopID": "comp20"},
+			{"name": "Sumdex", "floor": "lv03", "shopID": "comp21"},
+			{"name": "The Sun Shop", "floor": "lv03", "shopID": "comp22"},
+			{"name": "Thinking Tools @ Mall", "floor": "lv03", "shopID": "comp23"}
+		]
 	}
 
  
