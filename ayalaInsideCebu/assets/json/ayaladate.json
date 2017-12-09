@@ -200,7 +200,7 @@
 		]
 	},
 	{
-		"category": "FOOD STALLS/CARTS",
+		"category": "FOOD STALLS / CARTS",
 		"shopinfo": [
 			{"name": "Auntie Annes Pretzels", "floor": "lv03", "shopID": "foodstalls01"}
 		]
@@ -414,6 +414,60 @@
 		"category": "SERVICES",
 		"shopinfo": [
 			{"name": "Candy Corner", "floor": "lv02", "shopID": "service01"}
+		]
+	},
+	{
+		"category": "SERVICES",
+		"shopinfo": [
+			{"name": "2GO", "floor": "lv02", "shopID": "service01"},
+			{"name": "A1 Driving School", "floor": "lv04", "shopID": "service02"},
+			{"name": "Alveo Showroom", "floor": "lv03", "shopID": "service03"},
+			{"name": "Annies", "floor": "bm01", "shopID": "service04"},
+			{"name": "Ayala Land Premier Showroom", "floor": "lv01", "shopID": "service05"},
+			{"name": "Ballet Center", "floor": "lv03", "shopID": "service06"},
+			{"name": "Bench Fix", "floor": "lv04", "shopID": "service07"},
+			{"name": "Brunos Barbers", "floor": "bm01", "shopID": "service08"},
+			{"name": "Business Box", "floor": "lv02", "shopID": "service09"},
+			{"name": "Care and Cure Hub", "floor": "bm02", "shopID": "service10"},
+			{"name": "Cebuana Lhuillier Pera Padala", "floor": "lv04", "shopID": "service11"},
+			{"name": "Cebuana Lhuillier Pera Padala", "floor": "bm02", "shopID": "service12"},
+			{"name": "Copylandia", "floor": "lv02", "shopID": "service13"},
+			{"name": "Core Pacific Money Exchange", "floor": "lv04", "shopID": "service14"},
+			{"name": "Davids Salon", "floor": "bm02", "shopID": "service15"},
+			{"name": "Dentaland", "floor": "bm01", "shopID": "service16"},
+			{"name": "Freshaire", "floor": "bm02", "shopID": "service17"},
+			{"name": "Globe Flagship Store", "floor": "lv02", "shopID": "service18"},
+			{"name": "Go Large Graphics", "floor": "lv04", "shopID": "service19"},
+			{"name": "Golden JC", "floor": "lv02", "shopID": "service20"},
+			{"name": "GPC Moneychanger", "floor": "lv01", "shopID": "service21"},
+			{"name": "Grand Hope", "floor": "lv04", "shopID": "service22"},
+			{"name": "Green Apple Dental", "floor": "lv01", "shopID": "service23"},
+			{"name": "Hollywood Nails", "floor": "bm01", "shopID": "service24"},
+			{"name": "Ink For Less", "floor": "lv03", "shopID": "service25"},
+			{"name": "Jolly Barbers", "floor": "bm01", "shopID": "service26"},
+			{"name": "Keycards", "floor": "lv02", "shopID": "service27"},
+			{"name": "Lavada Queen", "floor": "lv02", "shopID": "service28"},
+			{"name": "LBC Express", "floor": "lv02", "shopID": "service29"},
+			{"name": "Maanyag", "floor": "bm02", "shopID": "service30"},
+			{"name": "Made For U", "floor": "lv02", "shopID": "service31"},
+			{"name": "Magic Fit Shop", "floor": "lv02", "shopID": "service32"},
+			{"name": "Mail&More", "floor": "lv02", "shopID": "service33"},
+			{"name": "Mantaring", "floor": "lv02", "shopID": "service34"},
+			{"name": "ML Kwarta Padala", "floor": "lv02", "shopID": "service35"},
+			{"name": "My Playroom", "floor": "lv03", "shopID": "service36"},
+			{"name": "My Studio", "floor": "lv04", "shopID": "service37"},
+			{"name": "Netopia", "floor": "lv04", "shopID": "service38"},
+			{"name": "Nokia Care", "floor": "lv04", "shopID": "service39"},
+			{"name": "Olvis Visa Services", "floor": "lv04", "shopID": "service40"},
+			{"name": "Sky Cable", "floor": "lv04", "shopID": "service41"},
+			{"name": "SpeedTalk", "floor": "lv04", "shopID": "service42"},
+			{"name": "SPEEDTALK Language Training Center", "floor": "lv04", "shopID": "service43"},
+			{"name": "SST Laptop Repair Specialist", "floor": "lv04", "shopID": "service44"},
+			{"name": "Suarez Arts and Metals", "floor": "lv04", "shopID": "service45"},
+			{"name": "The Spa at Cebu", "floor": "lv04", "shopID": "service46"},
+			{"name": "The Sun Shop", "floor": "lv04", "shopID": "service47"},
+			{"name": "Western Union", "floor": "lv04", "shopID": "service48"},
+			{"name": "Xchange", "floor": "lv03", "shopID": "service49"}
 		]
 	},
 	{
