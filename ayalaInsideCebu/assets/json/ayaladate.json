@@ -300,6 +300,37 @@
 			{"name": "Premium Concepts", "floor": "lv03", "shopID": "home06"},
 			{"name": "Samsung", "floor": "lv01", "shopID": "home07"}
 		]
+	},
+	{
+		"category": "JEWELRY & WATCHES",
+		"shopinfo": [
+			{"name": "3Js Pearls&Gems", "floor": "lv02", "shopID": "jew01"},
+			{"name": "Accessorize", "floor": "lv01", "shopID": "jew02"},
+			{"name": "Broadway Gems", "floor": "lv02", "shopID": "jew03"},
+			{"name": "Color Stone Enterprise", "floor": "lv01", "shopID": "jew04"},
+			{"name": "Filigrenasia", "floor": "lv01", "shopID": "jew05"},
+			{"name": "Fossil", "floor": "lv01", "shopID": "jew06"},
+			{"name": "Gems&Designs by Premium Concepts", "floor": "lv02", "shopID": "jew07"},
+			{"name": "Jewelmer", "floor": "lv01", "shopID": "jew08"},
+			{"name": "Just Jewels", "floor": "lv01", "shopID": "jew09"},
+			{"name": "Lucerne", "floor": "lv01", "shopID": "jew10"},
+			{"name": "M. Lhuillier Jewellers", "floor": "lv01", "shopID": "jew11"},
+			{"name": "Marcella", "floor": "lv02", "shopID": "jew12"},
+			{"name": "Meridian Time", "floor": "lv01", "shopID": "jew13"},
+			{"name": "Natalie", "floor": "lv01", "shopID": "jew14"},
+			{"name": "No Curfew", "floor": "lv02", "shopID": "jew15"},
+			{"name": "Oro China", "floor": "lv02", "shopID": "jew16"},
+			{"name": "Seiko", "floor": "lv02", "shopID": "jew17"},
+			{"name": "Silverworks", "floor": "lv01", "shopID": "jew18"},
+			{"name": "Swatch", "floor": "lv01", "shopID": "jew19"},
+			{"name": "The Bead Shop", "floor": "lv01", "shopID": "jew20"},
+			{"name": "The Timex Shop", "floor": "lv01", "shopID": "jew21"},
+			{"name": "Time Depot", "floor": "lv03", "shopID": "jew22"},
+			{"name": "Unisilver", "floor": "lv02", "shopID": "jew23"},
+			{"name": "Watch Works", "floor": "lv01", "shopID": "jew24"},
+			{"name": "Wrist_Pod", "floor": "lv01", "shopID": "jew25"}
+		]
 	}
+
 ]
 
