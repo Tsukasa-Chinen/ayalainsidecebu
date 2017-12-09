@@ -330,6 +330,76 @@
 			{"name": "Watch Works", "floor": "lv01", "shopID": "jew24"},
 			{"name": "Wrist_Pod", "floor": "lv01", "shopID": "jew25"}
 		]
+	},
+	{
+		"category": "MUSIC / AUDIO / VIDEO",
+		"shopinfo": [
+			{"name": "Astrovision", "floor": "lv02", "shopID": "muc01"},
+			{"name": "Odyssey", "floor": "lv02", "shopID": "muc02"}
+		]
+	},
+	{
+		"category": "OPTICAL SHOPS",
+		"shopinfo": [
+			{"name": "Acebedo Optical", "floor": "lv02", "shopID": "opt01"},
+			{"name": "De Los Reyes Optical", "floor": "lv02", "shopID": "opt02"},
+			{"name": "Executive Optical", "floor": "lv02", "shopID": "opt03"},
+			{"name": "Eyes Candy", "floor": "lv03", "shopID": "opt04"},
+			{"name": "Perez Optical", "floor": "lv01", "shopID": "opt05"},
+			{"name": "The Optical Shop", "floor": "lv02", "shopID": "opt06"},
+			{"name": "Vision Express Optical Superstore", "floor": "lv02", "shopID": "opt07"}
+		]
+	},
+	{
+		"category": "PHOTO DEVELOPING / CAMERA SHOPS",
+		"shopinfo": [
+			{"name": "Colours Foto", "floor": "lv01", "shopID": "photo01"},
+			{"name": "Picture City", "floor": "lv01", "shopID": "photo02"},
+			{"name": "Pixelpoint by Photoline", "floor": "lv03", "shopID": "photo03"},
+			{"name": "Royal Pictures", "floor": "lv02", "shopID": "photo04"},
+			{"name": "The Banana Book", "floor": "lv04", "shopID": "photo05"},
+			{"name": "The Picture Company", "floor": "lv02", "shopID": "photo06"}
+		]
+	},
+	{
+		"category": "SPECIALTY FOOD / DRINKS",
+		"shopinfo": [
+			{"name": "Candy Corner", "floor": "lv02", "shopID": "specialfood01"}
+		]
+	},
+	{
+		"category": "SPORTSWEAR & SPORTING GOODS",
+		"shopinfo": [
+			{"name": "Chris Sports", "floor": "lv02", "shopID": "sports01"},
+			{"name": "DC Shoes", "floor": "lv02", "shopID": "sports02"},
+			{"name": "Empire Golf", "floor": "lv03", "shopID": "sports03"},
+			{"name": "Fila", "floor": "lv03", "shopID": "sports04"},
+			{"name": "G-Force", "floor": "lv03", "shopID": "sports05"},
+			{"name": "Juego", "floor": "lv03", "shopID": "sports06"},
+			{"name": "Merrell", "floor": "lv03", "shopID": "sports07"},
+			{"name": "Mizuno", "floor": "lv03", "shopID": "sports08"},
+			{"name": "Nike Park", "floor": "lv02", "shopID": "sports09"},
+			{"name": "Olympic Village", "floor": "lv02", "shopID": "sports10"},
+			{"name": "Planet Sports", "floor": "lv02", "shopID": "sports11"},
+			{"name": "Puma", "floor": "lv02", "shopID": "sports12"},
+			{"name": "R-Options", "floor": "lv03", "shopID": "sports13"},
+			{"name": "ROX", "floor": "lv02", "shopID": "sports14"},
+			{"name": "Rudy Project", "floor": "lv03", "shopID": "sports15"},
+			{"name": "Runnr", "floor": "lv02", "shopID": "sports16"},
+			{"name": "Speedo", "floor": "lv02", "shopID": "sports17"},
+			{"name": "Stoked", "floor": "lv03", "shopID": "sports18"},
+			{"name": "The Athlete’s Foot", "floor": "lv01", "shopID": "sports19"},
+			{"name": "Timberland", "floor": "lv01", "shopID": "sports20"},
+			{"name": "USA Sports", "floor": "lv02", "shopID": "sports21"},
+			{"name": "Wellness Concepts", "floor": "lv03", "shopID": "sports22"}
+		]
+	},
+	{
+		"category": "SUPERMARKET / HYPERMARKET",
+		"shopinfo": [
+			{"name": "Metro Gaisano", "floor": "lv01", "shopID": "market01"},
+			{"name": "Rustan’s Supermarket Fresh", "floor": "bm01", "shopID": "market02"}
+		]
 	}
 
 ]
