@@ -362,9 +362,64 @@
 		]
 	},
 	{
-		"category": "SPECIALTY FOOD / DRINKS",
+		"category": "RESTAURANTS / BARS",
 		"shopinfo": [
-			{"name": "Candy Corner", "floor": "lv02", "shopID": "specialfood01"}
+			{"name": "93rd&1st", "floor": "lv04", "shopID": "res01"},
+			{"name": "Army Navy", "floor": "lv02", "shopID": "res02"},
+			{"name": "Banana Leaf", "floor": "lv01", "shopID": "res03"},
+			{"name": "Big Mao", "floor": "lv02", "shopID": "res04"},
+			{"name": "Bigbys", "floor": "lv03", "shopID": "res05"},
+			{"name": "Bistro Ecila", "floor": "lv03", "shopID": "res06"},
+			{"name": "Bonchon Chicken", "floor": "lv02", "shopID": "res07"},
+			{"name": "Cafe Laguna", "floor": "lv01", "shopID": "res08"},
+			{"name": "Casa Verde", "floor": "lv03", "shopID": "res09"},
+			{"name": "CYMA Estiatorio", "floor": "lv01", "shopID": "res10"},
+			{"name": "Flame It!", "floor": "lv04", "shopID": "res11"},
+			{"name": "Gerrys Grill", "floor": "lv02", "shopID": "res12"},
+			{"name": "Giligans Island", "floor": "lv03", "shopID": "res13"},
+			{"name": "Harbour City", "floor": "lv03", "shopID": "res14"},
+			{"name": "Hukad", "floor": "lv02", "shopID": "res15"},
+			{"name": "Idea Italia", "floor": "lv01", "shopID": "res16"},
+			{"name": "Kublai Khan", "floor": "lv03", "shopID": "res17"},
+			{"name": "La Tegola", "floor": "lv01", "shopID": "res18"},
+			{"name": "Laguna Garden", "floor": "lv01", "shopID": "res19"},
+			{"name": "Maxs Restaurant", "floor": "lv01", "shopID": "res20"},
+			{"name": "Mesa", "floor": "lv01", "shopID": "res21"},
+			{"name": "Mooon Cafe", "floor": "lv02", "shopID": "res22"},
+			{"name": "Mothers Fried Chicken", "floor": "lv03", "shopID": "res23"},
+			{"name": "Oh Georg!", "floor": "lv01", "shopID": "res24"},
+			{"name": "Pancake House", "floor": "lv01", "shopID": "res25"},
+			{"name": "Persian Palate", "floor": "lv03", "shopID": "res26"},
+			{"name": "Pizza Hut", "floor": "lv03", "shopID": "res27"},
+			{"name": "Rai Rai Ken", "floor": "lv03", "shopID": "res28"},
+			{"name": "Red Kimono", "floor": "lv02", "shopID": "res29"},
+			{"name": "Shabuway", "floor": "lv02", "shopID": "res30"},
+			{"name": "Shakeys", "floor": "lv03", "shopID": "res31"},
+			{"name": "Siam Thai Cuisine", "floor": "lv01", "shopID": "res32"},
+			{"name": "Sizzlin Pepper Steak", "floor": "lv02", "shopID": "res33"},
+			{"name": "Spaghetti Factory", "floor": "lv03", "shopID": "res34"},
+			{"name": "Sumosam", "floor": "lv01", "shopID": "res35"},
+			{"name": "Sunburst", "floor": "lv02", "shopID": "res36"},
+			{"name": "Teriyaki Boy", "floor": "lv02", "shopID": "res37"},
+			{"name": "TGIFridays", "floor": "lv01", "shopID": "res38"},
+			{"name": "The Canvas", "floor": "lv02", "shopID": "res39"},
+			{"name": "The Dessert Factor", "floor": "lv03", "shopID": "res40"},
+			{"name": "The Gustavian", "floor": "lv01", "shopID": "res41"},
+			{"name": "The Lemon Grass", "floor": "lv01", "shopID": "res42"},
+			{"name": "Tsim Sha Tsui Dimsum&Tea Bar", "floor": "lv02", "shopID": "res43"},
+			{"name": "Yellow Cab The Terraces", "floor": "lv03", "shopID": "res44"}
+		]
+	},
+	{
+		"category": "SERVICES",
+		"shopinfo": [
+			{"name": "Candy Corner", "floor": "lv02", "shopID": "service01"}
+		]
+	},
+	{
+		"category": "SHOES, BAGS & LEATHER",
+		"shopinfo": [
+			{"name": "Candy Corner", "floor": "lv02", "shopID": "shoes01"}
 		]
 	},
 	{
