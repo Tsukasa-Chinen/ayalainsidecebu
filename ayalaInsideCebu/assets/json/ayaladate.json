@@ -77,7 +77,7 @@
 			{"name": "United Colors of Benetton", "floor": "lv01", "shopID": "app66"},
 			{"name": "USA Sports", "floor": "lv02", "shopID": "app67"},
 			{"name": "Van Heusen", "floor": "lv01", "shopID": "app68"},
-			{"name": "Vans ", "floor": "lv02", "shopID": "app69"},
+			{"name": "Vans", "floor": "lv02", "shopID": "app69"},
 			{"name": "What A Girl Wants", "floor": "lv01", "shopID": "app70"},
 			{"name": "XOXO", "floor": "lv02", "shopID": "app71"}
 		]
@@ -599,7 +599,7 @@
 		"category": "SUPERMARKET / HYPERMARKET",
 		"shopinfo": [
 			{"name": "Metro Gaisano", "floor": "lv01", "shopID": "market01"},
-			{"name": "Rustan’s Supermarket Fresh", "floor": "bm01", "shopID": "market02"}
+			{"name": "Rustans Supermarket Fresh", "floor": "bm01", "shopID": "market02"}
 		]
 	}
 ]

@@ -52,10 +52,8 @@ class mapViewController: UIViewController, UIWebViewDelegate {
 			let shopsInfo = values["shopinfo"] as! NSArray
 			let shopsCount = shopsInfo.count
 			
-			var num:Int = 0
 			for i in 0..<shopsCount{
-				num += i
-				let shopInfo = shopsInfo[num] as! NSDictionary
+				let shopInfo = shopsInfo[i] as! NSDictionary
 				
 				let getShopName = shopInfo["name"] as! String
 				let shopName = getShopName.lowercased().replacingOccurrences(of: " ", with: "-")

@@ -118,38 +118,38 @@ a:focus {
 	color: #fff;
 	padding-left: .5rem;
 }
-.shop .svg {
+.shop__svg {
 	color: #fff;
 	width: 2.3rem;
 }
-.history .svg {
+.history__svg {
 	width: 2.2rem;	
 	transform: translate(-.1rem, 0);
 }
-.history .st0 {
+.history__st0 {
 	display:none;
 }
-.history .st1 {
+.history__st1 {
 	display:inline;
 }
-.history .st2 {
+.history__st2 {
 	opacity:0.75;
 	fill:#ED358D;
 }
-.history .st3 {
+.history__st3 {
 	fill:#FFFFFF;
 }
-.history .st4 {
+.history__st4 {
 	font-family:'KozGoPr6N-Regular-83pv-RKSJ-H';
 }
-.history .st5 {
+.history__st5 {
 	font-size:10px;
 }
-.search .svg {
+.search__svg {
 	width: 2.1rem;
 	transform: translate(.1rem, 0);
 }
-.where .svg {
+.where__svg {
 	width: 2rem;
 	transform: translate(.1rem, 0);
 }
