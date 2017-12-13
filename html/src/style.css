@@ -219,13 +219,37 @@ a:focus {
 -------------------------------------- */
 #map .contents {
 	width: 100%;
+	height: 100%;
 	padding: 0;
 	overflow: auto;
 }
-.map__view {
-	width: 220%;
-	outline: 1px solid red;
+.map__wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
 }
+.map__view {
+	width: 160%;
+	padding-top: 12%;
+	transform: translate(-10%, 0);
+}
+.level01 .st0 {fill:none;stroke:#DDDDDD;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st1 {fill:none;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st2 {fill:#FFEEA6;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st3 {font-family:'Helvetica-Bold';}
+.level01 .st4 {font-size:10px;}
+.level01 .st5 {font-size:10.9036px;}
+.level01 .st6 {fill:#FFFFFF;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st7 {font-size:12px;}
+.level01 .st8 {fill:#F15A24;}
+.level01 .st9 {fill:#FFFFFF;}
+.level01 .st10 {fill:#57BC82;}
+.level01 .st11 {fill:#3CBC7C;}
+.level01 .st12 {fill:#FFFFFF;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st13 {fill:#EF7E5B;}
+.level01 .st14 {opacity:0.9;fill:#ADD8EA;}
+.level01 .st15 {fill:#F7931E;}
 
 /* Shop
 -------------------------------------- */
