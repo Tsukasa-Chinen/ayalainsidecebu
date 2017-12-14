@@ -1412,6 +1412,11 @@ $(function(){
 	if($goalShopName != ''){
 		$('.' + $goalShopName).attr('data-position', 'goal');
 	}		
+
+	if($selectedShopID != ''){
+		$('.' + $selectedShopID).attr('data-position', 'goal');
+	}		
+
 	$(document).on('tap', '.js_btn', function(){
 	    movePage($(this).data('scheme'));	
 	});
