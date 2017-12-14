@@ -223,14 +223,8 @@ a:focus {
 	padding: 0;
 	overflow: auto;
 }
-.map__wrapper {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: scroll;
-}
 .map__view {
-	width: 160%;
+	width: 200%;
 	padding-top: 12%;
 	transform: translate(-10%, 0);
 }
@@ -250,6 +244,20 @@ a:focus {
 .level01 .st13 {fill:#EF7E5B;}
 .level01 .st14 {opacity:0.9;fill:#ADD8EA;}
 .level01 .st15 {fill:#F7931E;}
+text {
+	position: relative;
+	z-index: 100;
+}
+[data-position="start"] text,
+[data-position="goal"] text {
+	fill: #fff!important;
+}
+[data-position="start"] * {
+	fill: #4beff5!important;
+}
+[data-position="goal"] * {
+	fill: #ff59dd!important;
+}
 
 /* Shop
 -------------------------------------- */
