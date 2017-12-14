@@ -221,12 +221,12 @@ a:focus {
 	width: 100%;
 	height: 100%;
 	padding: 0;
-	overflow: auto;
 }
 .map__view {
 	width: 200%;
 	padding-top: 12%;
 	transform: translate(-10%, 0);
+	overflow: scroll;
 }
 .level01 .st0 {fill:none;stroke:#DDDDDD;stroke-width:2;stroke-miterlimit:10;}
 .level01 .st1 {fill:none;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
@@ -244,19 +244,33 @@ a:focus {
 .level01 .st13 {fill:#EF7E5B;}
 .level01 .st14 {opacity:0.9;fill:#ADD8EA;}
 .level01 .st15 {fill:#F7931E;}
-text {
-	position: relative;
-	z-index: 100;
+
+
+@keyframes flash_start {
+	50%{
+		fill: rgba(75, 192, 242, 1);
+	}
+}
+@keyframes flash_goal {
+	50%{
+		fill: rgba(255, 132, 132, 1);
+	}
 }
 [data-position="start"] text,
 [data-position="goal"] text {
 	fill: #fff!important;
 }
-[data-position="start"] * {
-	fill: #4beff5!important;
+[data-position="start"] rect,
+[data-position="start"] path,
+[data-position="start"] polygon {
+	fill: rgba(0, 127, 255, 1)!important;
+	animation: flash_start 1s infinite;
 }
-[data-position="goal"] * {
-	fill: #ff59dd!important;
+[data-position="goal"] rect,
+[data-position="goal"] path,
+[data-position="goal"] polygon {
+	fill: rgba(255, 0, 0, 1)!important;
+	animation: flash_goal 1s infinite;
 }
 
 /* Shop
