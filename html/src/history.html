@@ -28,23 +28,9 @@ $(function(){
 	
 	/* JSON */
 	var $shopListElement = '',
-		$historyDate = '';
-		
-	var $todayCount = 0,
-		$yesterdayCount = 0,
-		$2daysagoCount = 0,
-		$3daysagoCount = 0;
-		
+		$historyDate     = '';
+				
 	for(var $i in $scriptCoreDataJSON){			
-		if($scriptCoreDataJSON[$i].date == 'Today'){
-			$todayCount++;
-			$historyDate = ' today' + $todayCount;
-		}else if($scriptCoreDataJSON[$i].date == 'Yesterday'){
-			$yesterdayCount++;
-			$historyDate = ' yesterday' + $yestadayCount;
-		}
-		
-		$shopListElement += '<dt class="history__list_label' + $historyDate + '"><span>' + $scriptCoreDataJSON[$i].date + '</span></dt>';
 		$shopListElement += '<dd class="js_shop_info history__list_shop" data-shop-id="' + $scriptCoreDataJSON[$i].shopID + '" data-shop-floor="' + $scriptCoreDataJSON[$i].shopFloor + '">' + $scriptCoreDataJSON[$i].shopName + '</dd>';
 	}
 	$('#history_list').append($shopListElement);		

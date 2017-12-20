@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C606BF351FCE538F005F9AA8 /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = C606BF341FCE538F005F9AA8 /* common.js */; };
 		C606BF371FCE5BD3005F9AA8 /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */; };
-		C6212B661FC523A9003C4887 /* map-level-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C6212B651FC523A9003C4887 /* map-level-02.png */; };
+		C60A914B1FE3680400D3AB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60A914A1FE3680300D3AB06 /* Assets.xcassets */; };
 		C62D97BE1FD62D5F00E1C037 /* ayalaInsideCebu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C62D97BC1FD62D5F00E1C037 /* ayalaInsideCebu.xcdatamodeld */; };
 		C62D97C51FD637E400E1C037 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D97C31FD637E400E1C037 /* History+CoreDataClass.swift */; };
 		C62D97C61FD637E400E1C037 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D97C41FD637E400E1C037 /* History+CoreDataProperties.swift */; };
@@ -19,7 +19,6 @@
 		C63420301FBE8FF600D650FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634202F1FBE8FF600D650FB /* AppDelegate.swift */; };
 		C63420321FBE8FF600D650FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420311FBE8FF600D650FB /* ViewController.swift */; };
 		C63420351FBE8FF600D650FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420331FBE8FF600D650FB /* Main.storyboard */; };
-		C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63420361FBE8FF600D650FB /* Assets.xcassets */; };
 		C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */; };
 		C63420451FBE8FF600D650FB /* ayalaInsideCebuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63420441FBE8FF600D650FB /* ayalaInsideCebuTests.swift */; };
 		C63420501FBE8FF600D650FB /* ayalaInsideCebuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634204F1FBE8FF600D650FB /* ayalaInsideCebuUITests.swift */; };
@@ -62,7 +61,7 @@
 /* Begin PBXFileReference section */
 		C606BF341FCE538F005F9AA8 /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
 		C606BF361FCE5BD3005F9AA8 /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
-		C6212B651FC523A9003C4887 /* map-level-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-level-02.png"; path = "html/src/map-level-02.png"; sourceTree = SOURCE_ROOT; };
+		C60A914A1FE3680300D3AB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ayalaInsideCebu/Assets.xcassets; sourceTree = "<group>"; };
 		C62D97BD1FD62D5F00E1C037 /* ayalaInsideCebu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ayalaInsideCebu.xcdatamodel; sourceTree = "<group>"; };
 		C62D97C31FD637E400E1C037 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C62D97C41FD637E400E1C037 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -73,7 +72,6 @@
 		C634202F1FBE8FF600D650FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63420311FBE8FF600D650FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C63420341FBE8FF600D650FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C63420361FBE8FF600D650FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63420391FBE8FF600D650FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C634203B1FBE8FF600D650FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63420401FBE8FF600D650FB /* ayalaInsideCebuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ayalaInsideCebuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +139,7 @@
 		C63420231FBE8FF600D650FB = {
 			isa = PBXGroup;
 			children = (
+				C60A914A1FE3680300D3AB06 /* Assets.xcassets */,
 				C62D97C31FD637E400E1C037 /* History+CoreDataClass.swift */,
 				C62D97C41FD637E400E1C037 /* History+CoreDataProperties.swift */,
 				C634202E1FBE8FF600D650FB /* ayalaInsideCebu */,
@@ -167,7 +166,6 @@
 				C6F0DD311FC1CE7600FCAB85 /* assets */,
 				C634202F1FBE8FF600D650FB /* AppDelegate.swift */,
 				C63420331FBE8FF600D650FB /* Main.storyboard */,
-				C63420361FBE8FF600D650FB /* Assets.xcassets */,
 				C63420381FBE8FF600D650FB /* LaunchScreen.storyboard */,
 				C634203B1FBE8FF600D650FB /* Info.plist */,
 				C62D97BC1FD62D5F00E1C037 /* ayalaInsideCebu.xcdatamodeld */,
@@ -236,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				C67B5A471FC4654B00B1CB84 /* arrow_r.svg */,
-				C6212B651FC523A9003C4887 /* map-level-02.png */,
 				C67B5A461FC4654B00B1CB84 /* clock.svg */,
 				C67B5A481FC4654B00B1CB84 /* search.svg */,
 				C67B5A491FC4654B00B1CB84 /* shop.svg */,
@@ -368,7 +365,7 @@
 			files = (
 				C67B5A541FC4657200B1CB84 /* search.html in Resources */,
 				C606BF351FCE538F005F9AA8 /* common.js in Resources */,
-				C6212B661FC523A9003C4887 /* map-level-02.png in Resources */,
+				C60A914B1FE3680400D3AB06 /* Assets.xcassets in Resources */,
 				C67B5A531FC4657200B1CB84 /* where.html in Resources */,
 				C6C2FE5D1FC3B34100664FCC /* jquery-2.1.4.min.js in Resources */,
 				C62D97C81FD63CA100E1C037 /* jquery.mobile.custom.min.js in Resources */,
@@ -376,7 +373,6 @@
 				C6C2FE5F1FC3B34100664FCC /* bg_body_top.png in Resources */,
 				C634203A1FBE8FF600D650FB /* LaunchScreen.storyboard in Resources */,
 				C67B5A4B1FC4654B00B1CB84 /* arrow_r.svg in Resources */,
-				C63420371FBE8FF600D650FB /* Assets.xcassets in Resources */,
 				C67B5A551FC4657200B1CB84 /* map.html in Resources */,
 				C67B5A571FC4657200B1CB84 /* shop.html in Resources */,
 				C67B5A4D1FC4654B00B1CB84 /* shop.svg in Resources */,
@@ -591,7 +587,7 @@
 				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocomina.ayalaInsideCebu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocomina.ayalaMapLv01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,7 +603,7 @@
 				INFOPLIST_FILE = ayalaInsideCebu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocomina.ayalaInsideCebu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocomina.ayalaMapLv01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;

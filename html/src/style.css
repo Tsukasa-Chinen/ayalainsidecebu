@@ -226,25 +226,25 @@ a:focus {
 .map__view {
 	width: 200%;
 	padding-top: 12%;
-	transform: translate(-10%, 0);
 	overflow: scroll;
 }
-.level01 .st0 {fill:none;stroke:#DDDDDD;stroke-width:2;stroke-miterlimit:10;}
-.level01 .st1 {fill:none;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
-.level01 .st2 {fill:#FFEEA6;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
-.level01 .st3 {font-family:'Helvetica-Bold';}
-.level01 .st4 {font-size:10px;}
-.level01 .st5 {font-size:10.9036px;}
-.level01 .st6 {fill:#FFFFFF;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
-.level01 .st7 {font-size:12px;}
-.level01 .st8 {fill:#F15A24;}
-.level01 .st9 {fill:#FFFFFF;}
-.level01 .st10 {fill:#57BC82;}
-.level01 .st11 {fill:#3CBC7C;}
-.level01 .st12 {fill:#FFFFFF;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
-.level01 .st13 {fill:#EF7E5B;}
-.level01 .st14 {opacity:0.9;fill:#ADD8EA;}
-.level01 .st15 {fill:#F7931E;}
+.level01 .st0{fill:none;stroke:#DDDDDD;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st1{fill:none;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st2{fill:#999999;}
+.level01 .st3{fill:#FFEEA6;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st4{fill:#FFFFFF;stroke:#F4D32C;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st5{fill:#75D89D;}
+.level01 .st6{fill:#FFCA85;stroke:#F9BA6E;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st7{fill:#FFCA85;}
+.level01 .st8{fill:#F15A24;}
+.level01 .st9{fill:#FFFFFF;}
+.level01 .st10{fill:#57BC82;}
+.level01 .st11{fill:#3CBC7C;}
+.level01 .st12{fill:#FFFFFF;stroke:#EEEEEE;stroke-width:2;stroke-miterlimit:10;}
+.level01 .st13{fill:#EF7E5B;}
+.level01 .st14{opacity:0.9;fill:#ADD8EA;}
+.level01 .st15{fill:#F7931E;}
+.level01 .st16{fill:#FFEEA6;}
 
 
 @keyframes flash_start {
@@ -257,10 +257,11 @@ a:focus {
 		fill: rgba(255, 132, 132, 1);
 	}
 }
-[data-position="start"] text,
-[data-position="goal"] text {
-	fill: #fff!important;
+[data-position="start"] .text path,
+[data-position="goal"] .text path {
+	fill: #585858!important;
 }
+[data-position="start"],
 [data-position="start"] rect,
 [data-position="start"] path,
 [data-position="start"] polygon {
